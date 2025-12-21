@@ -1,0 +1,62 @@
+{
+  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*SomeSymbol*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "41aab94d-c2d4-4334-8312-8bd74d83f5af"/*Index*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 0.0
+      },
+      "Min": 0,
+      "Max": 10000,
+      "Scale": 1.0
+    },
+    {
+      "InputId": "8d125e59-83d1-44a7-8cb3-cef2964f9b5e"/*GradientFile*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 75.0
+      },
+      "Usage": "FilePath",
+      "FileFilter": "|*.json"
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "0c3284f4-5f27-4a0f-ba0b-dd33974b5dfa"/*String*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "b18acce8-5b80-418b-80a3-54427be8e698"/*Text*/,
+      "Style": "Expanded",
+      "Size": {
+        "X": 110.0,
+        "Y": 179.0
+      },
+      "Position": {
+        "X": 140.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "41aab94d-c2d4-4334-8312-8bd74d83f5df"/*OutGradient*/,
+      "Position": {
+        "X": 240.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "OutputId": "41afb94d-c2d4-4334-8312-8bd74d83f5df"/*OutName*/,
+      "Position": {
+        "X": 240.0,
+        "Y": 100.0
+      }
+    }
+  ]
+}

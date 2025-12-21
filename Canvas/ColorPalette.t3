@@ -1,0 +1,35 @@
+{
+  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*SomeSymbol*/,
+  "Inputs": [
+    {
+      "Id": "41aab94d-c2d4-4334-8312-8bd74d83f5af"/*Index*/,
+      "DefaultValue": 0
+    },
+    {
+      "Id": "8d125e59-83d1-44a7-8cb3-cef2964f9b5e"/*GradientFile*/,
+      "DefaultValue": ""
+    }
+  ],
+  "Children": [
+    {
+      "Id": "0c3284f4-5f27-4a0f-ba0b-dd33974b5dfa"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "b18acce8-5b80-418b-80a3-54427be8e698"/*Text*/,
+      "SymbolId": "fd31d208-12fe-46bf-bfa3-101211f8f497",
+      "InputValues": [],
+      "Outputs": []
+    }
+  ],
+  "Connections": [
+    {
+      "SourceParentOrChildId": "0c3284f4-5f27-4a0f-ba0b-dd33974b5dfa",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "b18acce8-5b80-418b-80a3-54427be8e698",
+      "TargetSlotId": "f1f1be0e-d5bc-4940-bbc1-88bfa958f0e1"
+    }
+  ]
+}
