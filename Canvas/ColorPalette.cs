@@ -96,8 +96,10 @@ namespace Mio.General.Canvas{
             for (var i = 0; i < colors.Length; i += 1)
             {
                 var location = reciproc * i;
-                var item = new Gradient.Step(color: colors[i], id: Guid.NewGuid())
+                var item = new Gradient.Step
                 {
+                    Color = colors[i],
+                    Id = Guid.NewGuid(),
                     NormalizedPosition = location
                 };
                 gradient.Steps.Add(item);
