@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "hlsl.preprocessorDefinitions": [],
+  "hlsl.additionalIncludeDirectories": [
+    ".",
+    "D:/Projects/c#/TiXL-Projects/Canvas/Assets",
+    "D:/Projects/c#/TiXL-Projects/Canvas/Assets",
+    "D:/Projects/c#/tixl/Operators/examples/Assets",
+    "D:/Projects/c#/tixl/Operators/Lib/Assets",
+    "D:/Projects/c#/tixl/Operators/Mediapipe/Assets",
+    "D:/Projects/c#/tixl/Operators/Ndi/Assets",
+    "D:/Projects/c#/tixl/Operators/Skills/Assets",
+    "D:/Projects/c#/tixl/Operators/Spout/Assets",
+    "D:/Projects/c#/tixl/Operators/TypeOperators/Assets",
+    "D:/Projects/c#/tixl/Operators/unsplash/Assets"
+  ],
+  "hlsl.virtualDirectoryMappings": {
+    "/Mio.General.Canvas": "D:/Projects/c#/TiXL-Projects/Canvas/Assets",
+    "/Examples": "D:/Projects/c#/tixl/Operators/examples/Assets",
+    "/Lib": "D:/Projects/c#/tixl/Operators/Lib/Assets",
+    "/Mediapipe": "D:/Projects/c#/tixl/Operators/Mediapipe/Assets",
+    "/t3.ndi": "D:/Projects/c#/tixl/Operators/Ndi/Assets",
+    "/Skills": "D:/Projects/c#/tixl/Operators/Skills/Assets",
+    "/t3.spout": "D:/Projects/c#/tixl/Operators/Spout/Assets",
+    "/Types": "D:/Projects/c#/tixl/Operators/TypeOperators/Assets",
+    "/t3.unsplash": "D:/Projects/c#/tixl/Operators/unsplash/Assets"
+  }
+}
