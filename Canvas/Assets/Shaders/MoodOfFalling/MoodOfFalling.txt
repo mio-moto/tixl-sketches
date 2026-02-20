@@ -1,0 +1,17 @@
+﻿
+
+int gs = sqrt(TotalCount);
+float2 gpos = float2(i%gs,i/gs)/gs-0.5;
+gpos *= Center.xy;
+
+
+
+uint seedR = 0x578437adU;
+uint seedG = 0xd3adb3efU;
+uint seedB = 0x0800b135U;
+    
+float valueR = perlinNoise(float3(gpos, A * Center.z), 1, 6, 0.5, 2.0, seedR);
+float valueG = perlinNoise(float3(gpos, A * Center.z), 1, 6, 0.5, 2.0, seedG);
+float valueB = perlinNoise(float3(gpos, A * Center.z), 1, 6, 0.5, 2.0, seedB);
+p.Scale = (i % 2) == 0 ? float3(B, B, B) : float3(C, C, C);
+p.Position = float3(valueR, valueG, valueB);

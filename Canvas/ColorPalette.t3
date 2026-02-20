@@ -1,5 +1,5 @@
 {
-  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*SomeSymbol*/,
+  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*ColorPalette*/,
   "Inputs": [
     {
       "Id": "41aab94d-c2d4-4334-8312-8bd74d83f5af"/*Index*/,
@@ -8,6 +8,14 @@
     {
       "Id": "8d125e59-83d1-44a7-8cb3-cef2964f9b5e"/*GradientFile*/,
       "DefaultValue": ""
+    },
+    {
+      "Id": "9e2a0603-4441-44f9-b733-970407b00fb8"/*Interpolation*/,
+      "DefaultValue": 0
+    },
+    {
+      "Id": "e14484d1-f3ad-4ce4-963a-d5d9e356c220"/*OverrideInterpolation*/,
+      "DefaultValue": false
     }
   ],
   "Children": [

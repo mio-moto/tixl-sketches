@@ -1,0 +1,30 @@
+﻿// #define PI 3.14159265359
+// #define NoiseImpact A
+#define Sampling Center.xy
+#define SampleOffset float2(A, B)
+#define NoiseImpact float2(C, D)
+
+int gs = sqrt(TotalCount);
+float2 gpos = float2(i%gs,i/gs)/gs-0.5;
+// gpos *= Center.xy;
+
+
+float u = gpos.x * (2.0 * PI);
+float v = (gpos.y - 0.5) * (PI);
+u *= Sampling.x;
+v *= Sampling.y;
+u += SampleOffset.x;
+v += SampleOffset.y;
+    
+float2 noiseOffset = Image[gpos.xy * float2(1024, 1024) + float2(512, 512)].xy * NoiseImpact;
+    
+u *= 1.0 + noiseOffset.x;
+v *= 1.0 + noiseOffset.y;
+    
+p.Position = float3(
+    u * cos(v) * sin(u),
+    u * cos(u) * cos(v),
+    -u  * sin(v)
+    );
+//     1.0);
+// p.Position =  float3(scale.x, scale.y, scale.z);

@@ -1,5 +1,5 @@
 {
-  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*SomeSymbol*/,
+  "Id": "441791b9-3675-4b24-9c2d-aad316ed6615"/*ColorPalette*/,
   "Description": "",
   "InputUis": [
     {
@@ -19,7 +19,21 @@
         "Y": 75.0
       },
       "Usage": "FilePath",
-      "FileFilter": "|*.json"
+      "FileFilter": "json"
+    },
+    {
+      "InputId": "9e2a0603-4441-44f9-b733-970407b00fb8"/*Interpolation*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 225.0
+      }
+    },
+    {
+      "InputId": "e14484d1-f3ad-4ce4-963a-d5d9e356c220"/*OverrideInterpolation*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 150.0
+      }
     }
   ],
   "SymbolChildUis": [
