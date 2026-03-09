@@ -1,0 +1,44 @@
+{
+  "Id": "a9a75f64-6ad8-49b3-86ff-46c5a9fd349e"/*TuringTrigger*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "47de4767-18a5-4ea7-87da-04de76730cad"/*MinValue*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "InputId": "a806d70c-45ee-4c12-b3d4-1ecc75ce5c0d"/*MaxValue*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 75.0
+      }
+    }
+  ],
+  "SymbolChildUis": [],
+  "OutputUis": [
+    {
+      "OutputId": "10dfbb7b-4a3f-45b4-838b-abe16120de2c"/*Hit*/,
+      "Position": {
+        "X": -204.10858,
+        "Y": -209.51099
+      }
+    },
+    {
+      "OutputId": "865f46a7-fe28-4bd8-a1cb-a6fd4214a0ca"/*ImgOutput*/,
+      "Position": {
+        "X": -204.10858,
+        "Y": -109.51099
+      }
+    },
+    {
+      "OutputId": "320be7e0-1e6a-4725-9574-799eb5c30ac7"/*Result*/,
+      "Position": {
+        "X": -385.57806,
+        "Y": -49.23175
+      }
+    }
+  ]
+}
