@@ -1,11 +1,14 @@
 ﻿cbuffer ParamConstants : register(b0)
 {
+    float Threshold;
+    float Bleed;
+    float TargetWidth;
+    float TargetHeight;
 }
 
 cbuffer Resolution : register(b1)
 {
-    float TargetWidth;
-    float TargetHeight;
+
 }
 
 struct vsOutput
@@ -54,34 +57,34 @@ float4 psMain(vsOutput input) : SV_TARGET
 
     
     // itself collapses above the threshold
-    if(val_center > THRESHOLD) {
+    if(val_center > Threshold) {
         val = 0.0;
     }
 
     // all other sides increment itself
-    if(val_up_left > THRESHOLD) {
-        val += SIZE;
+    if(val_up_left > Threshold) {
+        val += Bleed;
     }
-    if(val_up > THRESHOLD) {
-        val += SIZE;
+    if(val_up > Threshold) {
+        val += Bleed;
     }
-    if(val_up_right > THRESHOLD) {
-        val += SIZE;
+    if(val_up_right > Threshold) {
+        val += Bleed;
     }
-    if(val_center_left > THRESHOLD) {
-        val += SIZE;
+    if(val_center_left > Threshold) {
+        val += Bleed;
     }
-    if(val_center_right > THRESHOLD) {
-        val += SIZE;
+    if(val_center_right > Threshold) {
+        val += Bleed;
     }
-    if(val_down_left > THRESHOLD) {
-        val += SIZE;
+    if(val_down_left > Threshold) {
+        val += Bleed;
     }
-    if(val_down > THRESHOLD) {
-        val += SIZE;
+    if(val_down > Threshold) {
+        val += Bleed;
     }
-    if(val_down_right > THRESHOLD) {
-        val += SIZE;
+    if(val_down_right > Threshold) {
+        val += Bleed;
     }
    
     val = clamp(val, 0.0, 1.0);

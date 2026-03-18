@@ -1,0 +1,19 @@
+{
+  "Id": "297d8ceb-8217-4da6-a18b-aa0b2abe6a9d"/*BeatTimer*/,
+  "Inputs": [
+    {
+      "Id": "27b8bb0a-8052-4e6e-a2b9-875f598ec981"/*Mode*/,
+      "DefaultValue": 0
+    },
+    {
+      "Id": "92df1464-fa61-4da2-9481-8f17b7ad4ea0"/*TimeDivider*/,
+      "DefaultValue": 0.0
+    },
+    {
+      "Id": "9cc3cf0b-f2c1-40a4-9673-088ec3d395e1"/*ExponentialFalloff*/,
+      "DefaultValue": 0.0
+    }
+  ],
+  "Children": [],
+  "Connections": []
+}

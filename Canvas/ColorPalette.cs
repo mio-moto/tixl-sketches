@@ -72,11 +72,19 @@ namespace Mio.General.Canvas{
             {
                 return;
             }
+
             if (!TryGetFilePath(path, out var fullPath))
             {
                 Log.Warning($"No file found at: {path}", this);
+                return;
             }
 
+            if (Directory.Exists(fullPath))
+            {
+                Log.Warning($"File path is a directory: {fullPath}", this);
+                return;
+            }
+            
             var allText = File.ReadAllText(fullPath);
             var result = JsonSerializer.Deserialize<List<GradientDto>>(allText);
             if (result != null)

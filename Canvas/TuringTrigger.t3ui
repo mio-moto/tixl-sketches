@@ -3,10 +3,38 @@
   "Description": "",
   "InputUis": [
     {
+      "InputId": "0f2fd449-50aa-4764-bc4f-60fab918210b"/*Steps*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 0.0
+      }
+    },
+    {
       "InputId": "47de4767-18a5-4ea7-87da-04de76730cad"/*MinValue*/,
       "Position": {
         "X": -200.0,
         "Y": 0.0
+      }
+    },
+    {
+      "InputId": "5ceb69c5-5add-4905-bf94-daf2ca3021be"/*Rate*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 75.0
+      }
+    },
+    {
+      "InputId": "8317e688-e941-4746-9f7b-9deb89ed5698"/*Quantization*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 150.0
+      }
+    },
+    {
+      "InputId": "94588995-ec30-4072-a75a-1a1f1205578d"/*Chance*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 150.0
       }
     },
     {
@@ -20,17 +48,10 @@
   "SymbolChildUis": [],
   "OutputUis": [
     {
-      "OutputId": "10dfbb7b-4a3f-45b4-838b-abe16120de2c"/*Hit*/,
+      "OutputId": "10dfbb7b-4a3f-45b4-838b-abe16120de2c"/*WasHit*/,
       "Position": {
         "X": -204.10858,
         "Y": -209.51099
-      }
-    },
-    {
-      "OutputId": "865f46a7-fe28-4bd8-a1cb-a6fd4214a0ca"/*ImgOutput*/,
-      "Position": {
-        "X": -204.10858,
-        "Y": -109.51099
       }
     },
     {

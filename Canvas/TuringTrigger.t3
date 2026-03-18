@@ -2,16 +2,12 @@
   "Id": "a9a75f64-6ad8-49b3-86ff-46c5a9fd349e"/*TuringTrigger*/,
   "Inputs": [
     {
-      "Id": "47de4767-18a5-4ea7-87da-04de76730cad"/*MinValue*/,
-      "DefaultValue": 0.0
-    },
-    {
-      "Id": "a806d70c-45ee-4c12-b3d4-1ecc75ce5c0d"/*MaxValue*/,
-      "DefaultValue": 0.0
-    },
-    {
       "Id": "0f2fd449-50aa-4764-bc4f-60fab918210b"/*Steps*/,
       "DefaultValue": 16
+    },
+    {
+      "Id": "47de4767-18a5-4ea7-87da-04de76730cad"/*MinValue*/,
+      "DefaultValue": 0.0
     },
     {
       "Id": "5ceb69c5-5add-4905-bf94-daf2ca3021be"/*Rate*/,
@@ -26,17 +22,9 @@
       "DefaultValue": 0.25
     },
     {
-      "Id": "3f364bbb-219f-473b-9eec-b9f655474406"/*UseTriggerSequencer*/,
-      "DefaultValue": false
-    },
-    {
-      "Id": "f171fa24-8857-4b46-9af0-2c6631b74242"/*ChanceTrigger*/,
-      "DefaultValue": 0.25
-    },
-    {
-      "Id": "0d9882f2-26f7-41c9-b165-dce000842d24"/*Seed*/,
-      "DefaultValue": 3
-    },
+      "Id": "a806d70c-45ee-4c12-b3d4-1ecc75ce5c0d"/*MaxValue*/,
+      "DefaultValue": 0.0
+    }
   ],
   "Children": [],
   "Connections": []
