@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
-    <VersionPrefix>1.1.8</VersionPrefix>
+    <VersionPrefix>1.8.10</VersionPrefix>
     <Nullable>enable</Nullable>
     <EditorVersion>4.1.0</EditorVersion>
     <IsEditorOnly>false</IsEditorOnly>
@@ -13,6 +13,7 @@
     <HomeGuid>4097ce7a-1362-4f20-bfa0-32af2cd53a06</HomeGuid>
     <AssemblyName>$(RootNamespace)</AssemblyName>
     <PackageId>b6bc3978-30fa-45ac-a431-4c9147ca67c4</PackageId>
+    <IsArchived>false</IsArchived>
   </PropertyGroup>
   <ItemGroup>
     <Using Include="SharpDX.Direct3D.PrimitiveTopology">

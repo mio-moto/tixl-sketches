@@ -14,11 +14,11 @@ internal sealed class BeatTimer :Instance<BeatTimer>{
     [Output(Guid = "427ede62-b72c-45b1-8401-927c6f091516")]
     public readonly Slot<float> Time = new();
 
-        [Input(Guid = "92DF1464-FA61-4DA2-9481-8F17B7AD4EA0")]
-        public readonly InputSlot<float> TimeDivider = new InputSlot<float>();
+    [Input(Guid = "92DF1464-FA61-4DA2-9481-8F17B7AD4EA0")]
+    public readonly InputSlot<float> TimeDivider = new InputSlot<float>();
 
-        [Input(Guid = "9cc3cf0b-f2c1-40a4-9673-088ec3d395e1")]
-        public readonly InputSlot<float> ExponentialFalloff = new InputSlot<float>();
+    [Input(Guid = "9cc3cf0b-f2c1-40a4-9673-088ec3d395e1")]
+    public readonly InputSlot<float> ExponentialFalloff = new InputSlot<float>();
     
     private enum TimeModes
     {
@@ -29,8 +29,8 @@ internal sealed class BeatTimer :Instance<BeatTimer>{
         Frozen,
     }
 
-        [Input(Guid = "27b8bb0a-8052-4e6e-a2b9-875f598ec981", MappedType = typeof(TimeModes))]
-        public readonly InputSlot<int> Mode = new InputSlot<int>();
+    [Input(Guid = "27b8bb0a-8052-4e6e-a2b9-875f598ec981", MappedType = typeof(TimeModes))]
+    public readonly InputSlot<int> Mode = new InputSlot<int>();
 
     private bool _isFrozen;
 
@@ -78,9 +78,9 @@ internal sealed class BeatTimer :Instance<BeatTimer>{
         Fraction.Value = MathF.Pow(time % 1.0f, exponentialFalloff);
         Time.Value = time;
         
-        Beat.DirtyFlag.Clear();
-        Fraction.DirtyFlag.Clear();
-        Time.DirtyFlag.Clear();
+        // Beat.DirtyFlag.Clear();
+        // Fraction.DirtyFlag.Clear();
+        // Time.DirtyFlag.Clear();
     }
 
 }
