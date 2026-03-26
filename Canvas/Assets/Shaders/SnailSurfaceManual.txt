@@ -1,0 +1,131 @@
+﻿#include "shared/hash-functions.hlsl"
+#include "shared/point.hlsl"
+#include "shared/quat-functions.hlsl"
+#include "shared/bias-functions.hlsl"
+
+/*{ADDITIONAL_INCLUDES}*/
+
+cbuffer SpreadParams : register(b0)
+{
+    float4 Offset;
+    float4 NoiseImpact;
+    float4 SampleOffset;
+    float4 DirectionalNoise;
+}
+
+cbuffer FloatParams : register(b1)
+{   
+
+    float A;
+    float B;
+    float C;
+    float D;
+    float Time;
+}
+
+
+cbuffer IntParams : register(b2)
+{
+    uint TotalCount;
+    int2 TexSize_Image;
+    int2 TexSize_Gradient;
+    int2 TexSize_Noise;
+}
+
+
+StructuredBuffer<Point> SourcePoints : register(t0);
+Texture2D<float4> Image : register(t1);
+Texture2D<float4> Gradient : register(t2);
+Texture2D<float4> Noise : register(t3);
+
+
+RWStructuredBuffer<Point> ResultPoints : register(u0);
+sampler Sampler1 : register(s0);
+sampler Sampler2 : register(s1);
+sampler Sampler3 : register(s2);
+
+//=== Additional Resources ==========================================
+/*{RESOURCES(t3)}*/
+
+//=== Global functions ==============================================
+/*{GLOBALS}*/
+
+//=== Field functions ===============================================
+/*{FIELD_FUNCTIONS}*/
+
+
+
+//- DEFINES ------------------------------------
+/*{defines}*/
+//----------------------------------------------
+
+[numthreads(64,1,1)]
+void main(uint3 DTId : SV_DispatchThreadID)
+{
+    uint idx = DTId.x;
+    uint i=idx;
+
+    uint numStructs, stride;
+    SourcePoints.GetDimensions(numStructs, stride);
+    if(idx >= TotalCount) {
+        return;
+    }
+
+    float f = (float)idx / TotalCount;
+    Point p = (Point)0;
+    if(numStructs>0){
+        p = SourcePoints[(idx)%numStructs];
+    }else{
+        p.Position=float3(5,0,0);
+        p.FX1=1.0;
+        p.Rotation=float4(0,0,0,1);
+        p.Color=float4(1,1,1,1);
+        p.Scale=float3(1,1,1);
+        p.FX2=1.0;
+   }
+
+    {
+        //- METHOD -------------------------------------
+        int gs = ceil(sqrt(TotalCount));
+        float2 gpos = float2((i%gs), (i/gs)) / (float) gs;
+        
+        p.Position = float3(gpos, 0.0);
+
+    
+
+        float u = gpos.x * (2.0 * PI);
+        float v = (gpos.y - 0.5) * (PI);
+        u *= Offset.x;
+        v *= Offset.y;
+        
+        // sliding the samplers into a direction
+        u += SampleOffset.x;
+        v += SampleOffset.y;
+        
+        // how much to offset the position of each individual particle
+        float2 sampleOffset = Image[gpos.xy * TexSize_Image].xy;
+        // offset texture is RGB 0...1, thus remapping it to -1...1;
+        sampleOffset = ((sampleOffset - float2(0.5, 0.5)) * 2.0) * NoiseImpact.xy;
+        
+        // fixed positional offset to add a little bit of jitter between particles
+        float3 noiseOffset = Noise[gpos.xy * TexSize_Noise].xyz;
+        // the noise texture is RGB 0...1, thus remapping it to -1...1
+        noiseOffset = ((noiseOffset - float3(0.5, 0.5, 0.5)) * 2.0) * DirectionalNoise.xyz;
+        
+        
+        u *= 1.0 + sampleOffset.x;
+        v *= 1.0 + sampleOffset.y;
+
+       
+        // p.Position = noiseOffset;
+        p.Position = float3(
+                    u * cos(v) * sin(u),
+                    u * cos(u) * cos(v),
+                    -u  * sin(v)
+                    ) + noiseOffset;
+                
+        // p.Color = float4(gpos, 1.0, 1.0);
+    }
+    ResultPoints[idx] = p;
+    
+}
