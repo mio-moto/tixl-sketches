@@ -26,6 +26,9 @@ namespace Mio.General.Canvas{
         [Input(Guid = "3d8db148-1a07-4fcf-bea0-c2e113bd2bcc")]
         public readonly InputSlot<float> Flow = new InputSlot<float>();
 
+        [Input(Guid = "532820e3-5da4-432a-8ee0-612bd8652031")]
+        public readonly InputSlot<float> Rotation = new InputSlot<float>();
+
     }
 }
 
