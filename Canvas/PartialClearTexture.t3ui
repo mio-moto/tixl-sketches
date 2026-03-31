@@ -1,0 +1,91 @@
+{
+  "Id": "32b3e99b-e2ce-4384-9d69-9645e17c202c"/*PartialClearTexture*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "a5db001b-4477-4ae0-a8b9-f219a9fbd898"/*ClearRate*/,
+      "Position": {
+        "X": -561.7261,
+        "Y": 164.68192
+      },
+      "Min": 0.0,
+      "Max": 100.0,
+      "Scale": 0.01
+    },
+    {
+      "InputId": "be8ea01e-8867-4ca2-b4b0-d5d20a8c7e22"/*Image*/,
+      "Relevancy": "Required",
+      "Position": {
+        "X": -588.6447,
+        "Y": 257.1258
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "06f0006c-9459-4439-a03d-c3e3c773c87e"/*Div*/,
+      "Position": {
+        "X": -421.72607,
+        "Y": 164.68192
+      }
+    },
+    {
+      "ChildId": "0771196e-b72d-458f-bf2f-2c6a1235172c"/*RequestedResolution*/,
+      "Position": {
+        "X": -281.72577,
+        "Y": 59.681915
+      }
+    },
+    {
+      "ChildId": "123dd72e-fb2f-4a37-84c8-1724a9b8281b"/*RenderTarget*/,
+      "Position": {
+        "X": -141.72577,
+        "Y": 24.681915
+      }
+    },
+    {
+      "ChildId": "24bf8423-da2f-4695-ae5a-5214d5b74be2"/*RenderTarget*/,
+      "Position": {
+        "X": -141.72577,
+        "Y": 234.68192
+      }
+    },
+    {
+      "ChildId": "2f5a66e7-fd7b-4be9-8000-d930ece86d7a"/*Execute*/,
+      "Position": {
+        "X": -141.72577,
+        "Y": 164.68192
+      }
+    },
+    {
+      "ChildId": "46a8f334-f81a-4861-a330-fae6ee086bc0"/*Layer2d*/,
+      "Position": {
+        "X": -281.72577,
+        "Y": 199.68192
+      }
+    },
+    {
+      "ChildId": "5c3807f5-0318-4c7e-932d-5c3e09a9a1ca"/*Layer2d*/,
+      "Position": {
+        "X": -141.72577,
+        "Y": 94.681915
+      }
+    },
+    {
+      "ChildId": "f93fa77f-013b-4738-b0dd-6d7977181300"/*Vector4*/,
+      "Position": {
+        "X": -281.72577,
+        "Y": 129.68192
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "98431e94-4b45-41c4-9388-fbb4d4aa53d7"/*Output*/,
+      "Position": {
+        "X": -1.725769,
+        "Y": 234.68192
+      }
+    }
+  ]
+}

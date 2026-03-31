@@ -267,7 +267,7 @@
         {
           "Id": "50c9ab21-39f4-4e92-b5a7-ad9e60ae6ec3"/*FontPath*/,
           "Type": "System.String",
-          "Value": "Examples:fonts/Roboto-Regular.fnt"
+          "Value": "Mio.General.Canvas:fonts/3D Sports Bar_msdf.fnt"
         },
         {
           "Id": "62827185-635e-4bf4-b13a-301547b55acc"/*Sharpness*/,

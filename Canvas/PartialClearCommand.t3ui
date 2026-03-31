@@ -1,0 +1,80 @@
+{
+  "Id": "b7a20146-633c-41d6-8f53-2e1d9629c58c"/*PartialClearCommand*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "867beb6c-0c57-4738-be22-63401330c6d6"/*Command*/,
+      "Position": {
+        "X": -201.52338,
+        "Y": 23.845581
+      }
+    },
+    {
+      "InputId": "8a595db0-2317-4e85-9939-217e4b363fab"/*ClearRate*/,
+      "Position": {
+        "X": -481.52368,
+        "Y": -11.154419
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "250ca71d-80bd-4033-b04e-3880a1af1bf7"/*RenderTarget*/,
+      "Position": {
+        "X": -61.523376,
+        "Y": 58.84558
+      }
+    },
+    {
+      "ChildId": "2ad6824e-1778-4437-8ecc-79a821b3dcf5"/*Execute*/,
+      "Position": {
+        "X": -61.523376,
+        "Y": -11.154419
+      }
+    },
+    {
+      "ChildId": "2f318b4a-c36c-4f12-9d3a-27b619211bc8"/*Vector4*/,
+      "Position": {
+        "X": -201.52338,
+        "Y": -46.15442
+      }
+    },
+    {
+      "ChildId": "80b131ca-da8a-4dde-8616-1b2c8c533fcf"/*RenderTarget*/,
+      "Position": {
+        "X": -61.523376,
+        "Y": -151.15442
+      }
+    },
+    {
+      "ChildId": "9ce1a97f-413b-4b3f-abb1-3aa96aa05b16"/*RequestedResolution*/,
+      "Position": {
+        "X": -201.52338,
+        "Y": -116.15442
+      }
+    },
+    {
+      "ChildId": "a29c6900-3040-4a8b-ae70-4229258b81dc"/*Div*/,
+      "Position": {
+        "X": -341.52368,
+        "Y": -11.154419
+      }
+    },
+    {
+      "ChildId": "f8a1a9ca-0894-450c-b2c4-c83d95ad2d5a"/*Layer2d*/,
+      "Position": {
+        "X": -61.523376,
+        "Y": -81.15442
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "70450d76-305b-4fe0-9da2-3b8c193a1819"/*Output*/,
+      "Position": {
+        "X": 78.47662,
+        "Y": 58.84558
+      }
+    }
+  ]
+}
