@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "hlsl.preprocessorDefinitions": [],
+  "hlsl.additionalIncludeDirectories": [
+    ".",
+    "D:/Projects/c#/TiXL-Projects/Canvas/Assets",
+    "D:/Projects/c#/TiXL-Projects/Canvas/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/examples/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/Lib/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/Mediapipe/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/Ndi/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/Skills/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/Spout/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/TypeOperators/Assets/shaders/",
+    "D:/Projects/c#/tixl/Operators/unsplash/Assets/shaders/"
+  ],
+  "hlsl.virtualDirectoryMappings": {
+    "/Mio.General.Canvas": "D:/Projects/c#/TiXL-Projects/Canvas/Assets/shaders/",
+    "/Examples": "D:/Projects/c#/tixl/Operators/examples/Assets/shaders/",
+    "/Lib": "D:/Projects/c#/tixl/Operators/Lib/Assets/shaders/",
+    "/Mediapipe": "D:/Projects/c#/tixl/Operators/Mediapipe/Assets/shaders/",
+    "/t3.ndi": "D:/Projects/c#/tixl/Operators/Ndi/Assets/shaders/",
+    "/Skills": "D:/Projects/c#/tixl/Operators/Skills/Assets/shaders/",
+    "/t3.spout": "D:/Projects/c#/tixl/Operators/Spout/Assets/shaders/",
+    "/Types": "D:/Projects/c#/tixl/Operators/TypeOperators/Assets/shaders/",
+    "/t3.unsplash": "D:/Projects/c#/tixl/Operators/unsplash/Assets/shaders/"
+  }
+}

@@ -11,6 +11,9 @@ namespace Mio.General.Canvas{
         [Output(Guid = "061ef5ac-9974-4b44-a5dc-e7049af14ffb")]
         public readonly Slot<T3.Core.DataTypes.Texture2D> Output = new Slot<T3.Core.DataTypes.Texture2D>();
 
+        [Output(Guid = "eb0c9d92-c17d-4957-ae73-ec776dd72a20")]
+        public readonly Slot<T3.Core.DataTypes.Texture2D> MirrorOutput = new Slot<T3.Core.DataTypes.Texture2D>();
+
         [Input(Guid = "f6101e62-55cc-4734-af83-a4180cce60c6")]
         public readonly InputSlot<float> ClearRate = new InputSlot<float>();
 

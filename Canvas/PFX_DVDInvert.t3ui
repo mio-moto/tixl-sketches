@@ -1,0 +1,108 @@
+{
+  "Id": "bc12e426-1216-47da-b678-610c40885d60"/*PFX_DVDInvert*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "55d3d2ac-fcd4-41a5-a3d1-da5111cc7101"/*Speed*/,
+      "Position": {
+        "X": -233.70435,
+        "Y": 289.4823
+      }
+    },
+    {
+      "InputId": "f8ba18d9-e1d2-4be1-9eaa-2471c0627780"/*Image*/,
+      "Position": {
+        "X": -79.67334,
+        "Y": 0.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "0287b865-ffdd-48c0-8ad6-2edb2ebcea0a"/*Blur*/,
+      "Position": {
+        "X": 596.9341,
+        "Y": 352.30127
+      }
+    },
+    {
+      "ChildId": "47c7fd42-c7d8-4979-85c4-1ec44859475f"/*Layer2d*/,
+      "Position": {
+        "X": 60.32666,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "7f82e248-77d6-400a-bddb-cd893613d992"/*Layer2d*/,
+      "Position": {
+        "X": 596.9341,
+        "Y": 387.30127
+      }
+    },
+    {
+      "ChildId": "81b0a11d-5138-4bab-9875-3e60811bfdb3"/*AnimValue*/,
+      "Position": {
+        "X": 181.53992,
+        "Y": 233.77783
+      }
+    },
+    {
+      "ChildId": "84104305-6551-46bf-bb4d-78b570fc0c5f"/*LoadImage*/,
+      "Position": {
+        "X": 596.9341,
+        "Y": 317.30127
+      }
+    },
+    {
+      "ChildId": "846bfede-a093-4fef-a88c-ce25aea90330"/*RenderTarget*/,
+      "Position": {
+        "X": 960.3364,
+        "Y": 53.23047
+      }
+    },
+    {
+      "ChildId": "e3ddfab0-846a-4339-bee1-40b634c06e3f"/*AnimValue*/,
+      "Position": {
+        "X": 235.71144,
+        "Y": 350.3789
+      }
+    },
+    {
+      "ChildId": "ec39da96-f20a-4129-86c2-d881dd26c628"/*Vector2*/,
+      "Position": {
+        "X": 375.71143,
+        "Y": 315.3789
+      }
+    },
+    {
+      "ChildId": "eda67d94-5f3f-4e87-a0d8-a64769b9d12d"/*Multiply*/,
+      "Position": {
+        "X": 95.71144,
+        "Y": 385.3789
+      }
+    },
+    {
+      "ChildId": "f27b07d1-1e6b-40f4-be5f-dccfd12efc6c"/*Multiply*/,
+      "Position": {
+        "X": 41.539917,
+        "Y": 268.7776
+      }
+    },
+    {
+      "ChildId": "f44ec8bd-c475-4316-99c2-07dc76cda4e6"/*Execute*/,
+      "Position": {
+        "X": 820.3364,
+        "Y": 53.23047
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "7d28eac5-b953-47de-bccf-ecce90d8ca55"/*Output*/,
+      "Position": {
+        "X": 1100.3364,
+        "Y": 53.23047
+      }
+    }
+  ]
+}

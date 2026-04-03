@@ -1,0 +1,1621 @@
+{
+  "Id": "f1be1503-72d7-487f-8e7c-35069f0c8e22"/*VJ_ParticlePlane*/,
+  "Inputs": [],
+  "Children": [
+    {
+      "Id": "03cfa434-f2fa-43d3-ab54-01146dcd2032"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v),\n    (v/A) + tan(v),\n    -v/u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "04de4c4b-bf1b-49f4-b195-6a2c97544702"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u * cos(v) * sin(u)),\n    u * sin(u) * sin(v) * cos(u * v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "05a5bdf8-dd43-4b52-b309-7aebcf51f4e9"/*Remap*/,
+      "SymbolId": "f0acd1a4-7a98-43ab-a807-6d1bd3e92169",
+      "InputValues": [
+        {
+          "Id": "252276fb-8de1-42cc-ba41-07d6862015bd"/*RangeOutMax*/,
+          "Type": "System.Single",
+          "Value": 0.005
+        },
+        {
+          "Id": "40606d4e-acaf-4f23-a845-16f0eb9b73cf"/*Value*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "cd369755-5062-4934-8f37-e3a5cc9963df"/*RangeInMax*/,
+          "Type": "System.Single",
+          "Value": 100.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "09a403a7-8173-4842-9fd0-3df8ee632d76"/*IntDiv*/,
+      "SymbolId": "eae8b8af-ce79-4e0a-9777-2dd0a99c18cb",
+      "InputValues": [
+        {
+          "Id": "996cc728-62ab-4c77-b454-59f0d2f25c00"/*Denominator*/,
+          "Type": "System.Int32",
+          "Value": 4
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "0de5a6bc-c880-41dc-84f5-b8a989305514"/*CountInt*/,
+      "SymbolId": "0e1d5f4b-3ba0-4e71-aa26-7308b6df214d",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "1366663e-337b-48a7-8cba-2ba01ecb9b1e"/*Vector3*/,
+      "SymbolId": "94a5de3b-ee6a-43d3-8d21-7b8fe94b042b",
+      "InputValues": [
+        {
+          "Id": "084d5d0d-8fd4-431d-bf6c-8f082cce1d3f"/*X*/,
+          "Type": "System.Single",
+          "Value": 9.3
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "14dfcbc3-3398-48f1-843e-2addc8a500a6"/*AdvancedFeedback2*/,
+      "SymbolId": "a2ea3af5-d78b-46b4-84db-09d31f042798",
+      "InputValues": [
+        {
+          "Id": "0eeae01b-80d6-4267-bdf5-a6df2533ffe9"/*ChromaRange*/,
+          "Type": "System.Numerics.Vector2",
+          "Value": {
+            "X": 0.53,
+            "Y": 0.03
+          }
+        },
+        {
+          "Id": "1e6d0245-b5d4-45a5-8dac-6d905837060d"/*SampleDistance*/,
+          "Type": "System.Single",
+          "Value": 0.969
+        },
+        {
+          "Id": "3c93af8c-5658-4466-8301-95799b650e2b"/*AddBlurred*/,
+          "Type": "System.Single",
+          "Value": 0.014
+        },
+        {
+          "Id": "4232af30-de5f-4fd6-af92-d704e26f6850"/*LuminosityRange*/,
+          "Type": "System.Numerics.Vector2",
+          "Value": {
+            "X": 1.0,
+            "Y": 0.44
+          }
+        },
+        {
+          "Id": "4ed2a94d-ea7b-4fc5-8b3b-2ced9542b763"/*Twist*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "5264cbf8-13f6-4dfe-a82d-4f0904973488"/*Reset*/,
+          "Type": "System.Boolean",
+          "Value": false
+        },
+        {
+          "Id": "54ecb0e0-6fc0-4441-b26b-b820e95475a0"/*ShiftBrightness*/,
+          "Type": "System.Single",
+          "Value": -0.0135
+        },
+        {
+          "Id": "62c7b815-b189-4cd7-bad2-bb1c4251e646"/*Zoom*/,
+          "Type": "System.Single",
+          "Value": 1.0023
+        },
+        {
+          "Id": "73ba7691-784f-4706-8a88-9305f723c4cc"/*Displacement*/,
+          "Type": "System.Single",
+          "Value": 0.4
+        },
+        {
+          "Id": "b481a27b-3715-4b0e-869e-a2b5093138b6"/*TwirlNoiseScale*/,
+          "Type": "System.Single",
+          "Value": 4.0
+        },
+        {
+          "Id": "c027bc94-4ef8-4828-8df5-d30abbd31cbc"/*AmplifyEdges*/,
+          "Type": "System.Single",
+          "Value": 0.7
+        },
+        {
+          "Id": "c364b443-300e-4323-b0cc-f615649995a5"/*BlurRadius*/,
+          "Type": "System.Single",
+          "Value": 2.88
+        },
+        {
+          "Id": "c7f25ad5-1907-4851-8057-7c73f82da1be"/*RangeClamping*/,
+          "Type": "System.Single",
+          "Value": 0.02
+        },
+        {
+          "Id": "e05425c3-21fd-4621-b9ac-dbc972e26431"/*TwirlNoise*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "f5fa4652-4292-4000-a29d-854d3a6f17fe"/*TwirlNoiseSpeed*/,
+          "Type": "System.Single",
+          "Value": 0.25
+        },
+        {
+          "Id": "ffcdb058-5131-4146-8deb-a3102349e1c3"/*DisplaceOffset*/,
+          "Type": "System.Single",
+          "Value": 0.04
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "162dc4ea-010a-4bc2-b808-49c7e5730915"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v),\n    (v/u) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "16854d0e-c198-45d8-b3b5-676654405e01"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u),\n    u * sin(u) * sin(u / v),\n    -u + tan(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1ac0d443-f585-49b2-aa3c-d64a85b6ee3f"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u * cos(v) * sin(u)) * tan(u / v),\n    u * sin(u) * sin(v) * tan(u),\n    -u * sin(v) + tan(u / v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1bd726e9-148c-42f2-ac10-123ecf834f30"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "#define Sampling Center.xy\n#define SampleOffset float2(A, B)\n#define NoiseImpact float2(C, D)\n\nint gs = sqrt(TotalCount);\nfloat2 gpos = float2(i%gs,i/gs)/gs-0.5;\nfloat u = gpos.x * (2.0 * PI);\nfloat v = (gpos.y - 0.5) * (PI);\nu *= Sampling.x;\nv *= Sampling.y;\nu += SampleOffset.x;\nv += SampleOffset.y;\n\nfloat2 noiseOffset = Image[gpos.xy * float2(1024, 1024) + float2(512, 512)].xy * NoiseImpact;\nu *= 1.0 + noiseOffset.x;\nv *= 1.0 + noiseOffset.y;\n\np.Position = HullFunction(u, v);"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1c1628cc-0f68-496a-8e6f-6144fd992f23"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v * cos(v) * cos(u * v),\n    u * sin(u / v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1e28244a-099c-46a2-a34b-8fbc4ba432da"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v * A)) * sin(u) + A,\n    u * tan(u) * cos(v),\n    -u + sin(u * v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1edead42-3733-4c23-b25c-c054899ea68a"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u * cos(v) * sin(u)) * tan(u / v) + u,\n    u * sin(u) * sin(v) * tan(u),\n    -u  + tan(u / v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1ff0ac81-7461-4cc5-bb81-92102f8f7dd3"/*LinePoints*/,
+      "SymbolId": "4ae9e2f5-7cb3-40b0-a662-0662e8cb7c68",
+      "InputValues": [
+        {
+          "Id": "951a1792-e607-4595-b211-97be7d27694c"/*Count*/,
+          "Type": "System.Int32",
+          "Value": 1000000
+        },
+        {
+          "Id": "d120d8f7-aff6-4e30-b0d2-c45e3e477fde"/*W*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "ddc2ea6a-d356-46c9-b333-4cce69c02570"/*AddSeparator*/,
+          "Type": "System.Boolean",
+          "Value": false
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "26c41e8a-0a41-4f2c-b3aa-985a9e114964"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (v + 1) * 10,\n    (u - 0.5) + sin(u) ,\n    v + u + sin(u + v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "28558d0c-4748-47d0-9cba-6607e891982e"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u * cos(v)) / tan(u),\n    u * sin(u) * sin(v) * tan(u),\n    -u  * tan(u / v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "2d38f258-a46f-4cca-aac4-54fe1e0d9375"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v) * sin(v) / cos(v),\n    (u) + tan(v),\n    v + u\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "3003bd39-ed1b-4448-a1ee-3660156a9863"/*Ease*/,
+      "SymbolId": "6e29bd11-7927-4f74-a35e-a6b129464a55",
+      "InputValues": [
+        {
+          "Id": "fe0231d9-03b6-466f-82e9-852b892adf2e"/*Direction*/,
+          "Type": "System.Int32",
+          "Value": 1
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "30bf2929-0e6c-4a07-8554-0bfded623a9b"/*Blend*/,
+      "SymbolId": "9f43f769-d32a-4f49-92ac-e0be3ba250cf",
+      "InputValues": [
+        {
+          "Id": "6541c1ac-ba84-4a46-a6df-8ab52455c57b"/*ColorA*/,
+          "Type": "System.Numerics.Vector4",
+          "Value": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0,
+            "W": 1.0
+          }
+        },
+        {
+          "Id": "70dc133e-800a-4cd0-a159-2cbab4c322cb"/*ColorB*/,
+          "Type": "System.Numerics.Vector4",
+          "Value": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0,
+            "W": 0.28
+          }
+        },
+        {
+          "Id": "cad32967-e91b-4bd1-af09-5fdfdeee630e"/*AlphaMode*/,
+          "Type": "System.Int32",
+          "Value": 7
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "3510eede-9a77-4ea1-b4ea-759a2e542529"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u * cos(v) * sin(u)),\n    u * sin(u) * sin(v) * cos(u / v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "35854879-acc8-414f-ba19-f465d517a3f3"/*Ease*/,
+      "SymbolId": "6e29bd11-7927-4f74-a35e-a6b129464a55",
+      "InputValues": [
+        {
+          "Id": "fe0231d9-03b6-466f-82e9-852b892adf2e"/*Direction*/,
+          "Type": "System.Int32",
+          "Value": 1
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "384f41ad-15cd-4424-84fd-1a6bf0af75fa"/*AnimValue*/,
+      "SymbolId": "ea7b8491-2f8e-4add-b0b1-fd068ccfed0d",
+      "InputValues": [
+        {
+          "Id": "48005727-0158-4795-ad70-8410c27fd01d"/*Rate*/,
+          "Type": "System.Single",
+          "Value": -0.125
+        },
+        {
+          "Id": "79917ef7-64ca-4825-9c6a-c9b2a7f6ff86"/*Amplitude*/,
+          "Type": "System.Single",
+          "Value": 10.0
+        },
+        {
+          "Id": "ddd93b06-118e-43e0-85f6-c150faf91d04"/*Offset*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "f12fee9a-dd91-40c2-9aa5-ea34804a858d"/*Bias*/,
+          "Type": "System.Single",
+          "Value": 0.18
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "38dc9fe5-740c-48a5-9cac-dae9127713d4"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u),\n    u * sin(u) * sin(v + u),\n    -u + tan(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "4f107cb2-3113-4e45-ab86-605c80deeb17"/*Layer2d*/,
+      "SymbolId": "d8c5330f-59b5-4907-b845-a02def3042fa",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "51262741-3413-4cf0-a3d0-daee0d8f5ab2"/*Damp*/,
+      "SymbolId": "af9c5db8-7144-4164-b605-b287aaf71bf6",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "5173da70-446a-4bc5-8e75-22cb6c57a050"/*Multiply*/,
+      "SymbolId": "17b60044-9125-4961-8a79-ca94697b3726",
+      "InputValues": [
+        {
+          "Id": "5ae4bb07-4214-4ec3-a499-24d9f6d404a5"/*B*/,
+          "Type": "System.Single",
+          "Value": 0.5
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "53a47e92-318c-4db5-a4ba-bbb716d87cc7"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v * A)) / sin(u) + A,\n    u * sin(u) * cos(v),\n    -u + sin(u * v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "5438d07b-b344-46ae-9ac1-ca82a5257e10"/*CustomPointShader*/,
+      "SymbolId": "3d958f08-9c0f-45eb-a252-de880b5834f3",
+      "InputValues": [
+        {
+          "Id": "01898885-4140-4435-bb44-a7a6f6f32657"/*Offset*/,
+          "Type": "System.Numerics.Vector3",
+          "Value": {
+            "X": 9.4,
+            "Y": 12.1,
+            "Z": -0.35
+          }
+        },
+        {
+          "Id": "20226539-a481-4df6-8dc7-cc65de915ea9"/*D*/,
+          "Type": "System.Single",
+          "Value": 0.03
+        },
+        {
+          "Id": "a5c7863e-9c26-4109-9851-3244086b0ccc"/*A*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "b909844f-cff7-4907-9bc8-e9c2281582bf"/*C*/,
+          "Type": "System.Single",
+          "Value": 0.01
+        },
+        {
+          "Id": "e5a7649f-684e-4938-8ae3-7289f5b9ff45"/*B*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "55835f0b-9143-44f4-85a6-503e86082aad"/*AnimValue*/,
+      "SymbolId": "ea7b8491-2f8e-4add-b0b1-fd068ccfed0d",
+      "InputValues": [
+        {
+          "Id": "4cf5d20b-7335-4584-b246-c260ac5cdf4f"/*Shape*/,
+          "Type": "System.Int32",
+          "Value": 10
+        },
+        {
+          "Id": "7b4992ba-30f7-42e5-b04b-ae4ec0be810e"/*OverrideTime*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "55a6298e-5cd4-4dd0-8941-4012e29e1002"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v),\n    tan(v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "593e0a66-04e7-46f9-af55-fbe301df4c74"/*Add*/,
+      "SymbolId": "c160f925-0a66-4505-a569-cadd878dbb6f",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "5b3e896a-5035-4c08-8b70-1c31b1923fde"/*Ease*/,
+      "SymbolId": "6e29bd11-7927-4f74-a35e-a6b129464a55",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "663e476c-ecae-4f0f-9ee2-fb47772442b3"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * (tan(u)/v),\n    u * sin(u) * sin( u / v),\n    -u + tan(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "69a7d400-1f08-48fe-86e2-908f13c56366"/*AnimValue*/,
+      "SymbolId": "ea7b8491-2f8e-4add-b0b1-fd068ccfed0d",
+      "InputValues": [
+        {
+          "Id": "48005727-0158-4795-ad70-8410c27fd01d"/*Rate*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "4cf5d20b-7335-4584-b246-c260ac5cdf4f"/*Shape*/,
+          "Type": "System.Int32",
+          "Value": 10
+        },
+        {
+          "Id": "68f14205-f48d-4b44-823d-138eb61767b5"/*Phase*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "79917ef7-64ca-4825-9c6a-c9b2a7f6ff86"/*Amplitude*/,
+          "Type": "System.Single",
+          "Value": 50.0
+        },
+        {
+          "Id": "7b4992ba-30f7-42e5-b04b-ae4ec0be810e"/*OverrideTime*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "ddd93b06-118e-43e0-85f6-c150faf91d04"/*Offset*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "6b74e1b4-c48a-4cb9-bc80-d9be75c5ec35"/*AnimValue*/,
+      "SymbolId": "ea7b8491-2f8e-4add-b0b1-fd068ccfed0d",
+      "InputValues": [
+        {
+          "Id": "48005727-0158-4795-ad70-8410c27fd01d"/*Rate*/,
+          "Type": "System.Single",
+          "Value": 0.163
+        },
+        {
+          "Id": "4cf5d20b-7335-4584-b246-c260ac5cdf4f"/*Shape*/,
+          "Type": "System.Int32",
+          "Value": 6
+        },
+        {
+          "Id": "68f14205-f48d-4b44-823d-138eb61767b5"/*Phase*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "79917ef7-64ca-4825-9c6a-c9b2a7f6ff86"/*Amplitude*/,
+          "Type": "System.Single",
+          "Value": 5.6
+        },
+        {
+          "Id": "7b4992ba-30f7-42e5-b04b-ae4ec0be810e"/*OverrideTime*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "8327e7ec-4370-4a3e-bd69-db3f4aa4b1d7"/*Ratio*/,
+          "Type": "System.Single",
+          "Value": 2.0
+        },
+        {
+          "Id": "ddd93b06-118e-43e0-85f6-c150faf91d04"/*Offset*/,
+          "Type": "System.Single",
+          "Value": 0.4
+        },
+        {
+          "Id": "f12fee9a-dd91-40c2-9aa5-ea34804a858d"/*Bias*/,
+          "Type": "System.Single",
+          "Value": 0.15
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "6dbe1a39-65d5-4b45-a498-322f8b7345be"/*PartialClearTexture*/,
+      "SymbolId": "32b3e99b-e2ce-4384-9d69-9645e17c202c",
+      "InputValues": [
+        {
+          "Id": "a5db001b-4477-4ae0-a8b9-f219a9fbd898"/*ClearRate*/,
+          "Type": "System.Single",
+          "Value": 23.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "74035529-2e32-4021-90ef-68424daca68a"/*BeatTimer*/,
+      "SymbolId": "297d8ceb-8217-4da6-a18b-aa0b2abe6a9d",
+      "InputValues": [
+        {
+          "Id": "92df1464-fa61-4da2-9481-8f17b7ad4ea0"/*TimeDivider*/,
+          "Type": "System.Single",
+          "Value": 0.25
+        },
+        {
+          "Id": "9cc3cf0b-f2c1-40a4-9673-088ec3d395e1"/*ExponentialFalloff*/,
+          "Type": "System.Single",
+          "Value": 100.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "74601a8d-ff7d-4ed4-9120-d4f0e7690e42"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) + cos(u * v),\n    u * sin(u / v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "755f96a7-92d6-4f05-a99c-4fb845daacd4"/*Value*/,
+      "SymbolId": "5d7d61ae-0a41-4ffa-a51d-93bab665e7fe",
+      "InputValues": [
+        {
+          "Id": "7773837e-104a-4b3d-a41f-cadbd9249af2"/*Float*/,
+          "Type": "System.Single",
+          "Value": 5.04
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "7ee75ea1-f06b-40bb-98b8-dfa9cbc2ac4e"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (v + 1) * 10 + sin(u),\n    (u - 0.5) + sin(u) ,\n    v + u * sin(u + v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "7f62f732-b9d5-4d8d-80f8-146e8bdcce23"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u) * tan(u + v),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "80ad43a6-cc59-4dfd-9687-852534adb05b"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u),\n    u * sin(u) * sin(v),\n    -u + tan(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "8b4d541e-7b58-4713-a249-ea1b8dc6b64d"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u) * 5,\n    u * sin(u) * sin(v) * 5,\n    -u + sin(v) * 10\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "8b625de4-5c48-4c82-8d68-1a840c937087"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v)) / sin(u) + A,\n    u * sin(u) * cos(v ),\n    -u + sin(u * v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "8ec48ee4-595e-4b91-8d15-4490138821dc"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) + cos(u / A),\n    u * sin(u / v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "943e7441-dfb0-420a-a71c-cff89e2a0211"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v * A)) * sin(u) + A,\n    u * sin(u) * cos(v),\n    -u + sin(u * v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "9455f230-600c-4dcb-847d-23f6408377ab"/*Remap*/,
+      "SymbolId": "f0acd1a4-7a98-43ab-a807-6d1bd3e92169",
+      "InputValues": [
+        {
+          "Id": "252276fb-8de1-42cc-ba41-07d6862015bd"/*RangeOutMax*/,
+          "Type": "System.Single",
+          "Value": 0.005
+        },
+        {
+          "Id": "40606d4e-acaf-4f23-a845-16f0eb9b73cf"/*Value*/,
+          "Type": "System.Single",
+          "Value": 0.69
+        },
+        {
+          "Id": "cd369755-5062-4934-8f37-e3a5cc9963df"/*RangeInMax*/,
+          "Type": "System.Single",
+          "Value": 100.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "98f5717c-c0de-488e-a31b-38ee914abc9d"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u) * tan(u),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "9e3a4f4c-4242-4144-8861-025e53aac5ca"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v) * sin(v) / cos(v),\n    (v/A) + tan(v),\n    -v/u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "a0c747ea-1a7c-4c4b-9691-788042f61c6e"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v * A)) * sin(u) + A,\n    u * tan(u) * cos(v),\n    -u + cos(u / A)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "a596091d-98ad-4fd4-a260-1190a96e62f6"/*Grain*/,
+      "SymbolId": "b5102fba-f05b-43fc-aa1d-613fe1d68ad2",
+      "InputValues": [
+        {
+          "Id": "195da7e0-5279-4900-80cd-5635e96ab454"/*Amount*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "36df2611-4f74-4cc5-a49d-c0aff65f738a"/*RandomPhase*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "74ca5916-20ee-4a1f-a41e-342c12d2126a"/*GenerateMipmaps*/,
+          "Type": "System.Boolean",
+          "Value": true
+        },
+        {
+          "Id": "87a78859-5f0c-41af-8564-ac691b8f1950"/*Brightness*/,
+          "Type": "System.Single",
+          "Value": 0.51
+        },
+        {
+          "Id": "903c0270-dc46-402e-8088-8db8368a6dfb"/*Color*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "d24cce46-dd3f-4047-a33f-50abbca89cc4"/*Exponent*/,
+          "Type": "System.Single",
+          "Value": 1.0
+        },
+        {
+          "Id": "edb719cd-be40-4758-9c13-98cf14d1a5c5"/*Scale*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        },
+        {
+          "Id": "f1334f45-4335-4198-9b6e-ab9e8384aa32"/*Animate*/,
+          "Type": "System.Single",
+          "Value": 0.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "a792cd25-9802-466a-96bb-3e2a35d7706e"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) + cos(u / A),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "ab77b1d1-7b6a-45e7-9968-66159b37d7b6"/*Multiply*/,
+      "SymbolId": "17b60044-9125-4961-8a79-ca94697b3726",
+      "InputValues": [
+        {
+          "Id": "5ae4bb07-4214-4ec3-a499-24d9f6d404a5"/*B*/,
+          "Type": "System.Single",
+          "Value": 100.0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "aba3fd63-6a21-4b16-af2e-685e10b3d809"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    (u / cos(v)) / sin(u) + A,\n    u * sin(u) * cos(v +A),\n    -u + sin(u * v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "b72cd6d4-de90-4449-9d00-50328c69b70d"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * (cos(u + v)) * sin(u) + A,\n    u * tan(u) * cos(v),\n    -u + cos(u / A)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "b9ef57c6-4b68-4f47-828c-3c35115cf089"/*String*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u) * tan(v * u),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "b9fa04f5-5eba-4f0e-a868-683222385637"/*AnimValue*/,
+      "SymbolId": "ea7b8491-2f8e-4add-b0b1-fd068ccfed0d",
+      "InputValues": [
+        {
+          "Id": "48005727-0158-4795-ad70-8410c27fd01d"/*Rate*/,
+          "Type": "System.Single",
+          "Value": 0.015625
+        },
+        {
+          "Id": "4cf5d20b-7335-4584-b246-c260ac5cdf4f"/*Shape*/,
+          "Type": "System.Int32",
+          "Value": 6
+        },
+        {
+          "Id": "79917ef7-64ca-4825-9c6a-c9b2a7f6ff86"/*Amplitude*/,
+          "Type": "System.Single",
+          "Value": 3.141
+        },
+        {
+          "Id": "ddd93b06-118e-43e0-85f6-c150faf91d04"/*Offset*/,
+          "Type": "System.Single",
+          "Value": 0.1
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "bcfdbd9c-85ff-41bb-a971-5d266ab13bb7"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) * sin(u),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "c3466c44-d5f6-483c-90ce-10107cf517b9"/*DrawPoints*/,
+      "SymbolId": "ffd94e5a-bc98-4e70-84d8-cce831e6925f",
+      "InputValues": [
+        {
+          "Id": "3fbad175-6060-40f2-a675-bdae20107698"/*FadeNearest*/,
+          "Type": "System.Single",
+          "Value": 0.12
+        },
+        {
+          "Id": "414c8045-5086-4449-9d9a-03f28c3966b3"/*PointSize*/,
+          "Type": "System.Single",
+          "Value": 0.09
+        },
+        {
+          "Id": "cc442161-e9ca-40ea-be3b-f87189d4e155"/*Color*/,
+          "Type": "System.Numerics.Vector4",
+          "Value": {
+            "X": 0.5,
+            "Y": 0.5,
+            "Z": 0.5,
+            "W": 0.1
+          }
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "c5053347-682f-4133-a1ed-67cd81710f74"/*PickString*/,
+      "SymbolId": "a9784e5e-7696-49a0-bb77-2302587ede59",
+      "InputValues": [
+        {
+          "Id": "20e76577-92ee-443d-9630-ebc41e38bb85"/*Index*/,
+          "Type": "System.Int32",
+          "Value": 4
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "d67cf15b-cbb8-42b5-9ee8-eb1c71ff2a25"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v) + cos(u / A),\n    u * sin(u) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "d6ec017b-b32b-401d-871f-568df241cc79"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v * cos(v) * cos(u * v),\n    u * sin(u / v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "d733aab1-591e-4aec-af8f-c7674c362886"/*RemapColor*/,
+      "SymbolId": "da93f7d1-ef91-4b4a-9708-2d9b1baa4c14",
+      "InputValues": [
+        {
+          "Id": "c45d487b-3221-44c7-bf9e-b982a65280f6"/*Gradient*/,
+          "Type": "T3.Core.DataTypes.Gradient",
+          "Value": {
+            "Gradient": {
+              "Interpolation": "Linear",
+              "Steps": [
+                {
+                  "Id": "f37a1a4b-ea98-4da6-9a6b-1739c9edae5d",
+                  "NormalizedPosition": 0.0,
+                  "Color": {
+                    "R": 1.0,
+                    "G": 1.0,
+                    "B": 1.0,
+                    "A": 0.0
+                  }
+                },
+                {
+                  "Id": "7b218a9e-dbc9-4b97-ad0a-9362284904c1",
+                  "NormalizedPosition": 1.0,
+                  "Color": {
+                    "R": 1.0,
+                    "G": 0.99999,
+                    "B": 1.0,
+                    "A": 1.0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Id": "e3363c0e-819a-45e2-8202-439bcce64d69"/*Mode*/,
+          "Type": "System.Int32",
+          "Value": 0
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "ddcbf0f3-6526-4013-8c2c-6ba40ba939f7"/*MultiplyInt*/,
+      "SymbolId": "6a4edb6a-5ced-4356-9090-4bf770cdeb52",
+      "InputValues": [
+        {
+          "Id": "e02f9e84-a7bf-45bf-9cb1-0b0c1c396796"/*B*/,
+          "Type": "System.Int32",
+          "Value": 5983
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "e3e672ad-f0c4-450c-b5ce-e1b217051402"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    u * cos(v /A) * sin(u),\n    u * sin(u) * sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "f07637bb-9db3-4925-b14c-a709121dc462"/*Prime*/,
+      "SymbolId": "5880cbc3-a541-4484-a06a-0e6f77cdbe8e",
+      "Name": "Prime",
+      "InputValues": [
+        {
+          "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
+          "Type": "System.String",
+          "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v / cos(u * v),\n    (v/A) + tan(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "f693a934-d550-4293-965a-3999f1aed2ee"/*RenderTarget*/,
+      "SymbolId": "f9fe78c5-43a6-48ae-8e8c-6cdbbc330dd1",
+      "InputValues": [
+        {
+          "Id": "8bb4a4e5-0c88-4d99-a5b2-2c9e22bd301f"/*ClearColor*/,
+          "Type": "System.Numerics.Vector4",
+          "Value": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0
+          }
+        },
+        {
+          "Id": "ec46bef4-8dce-4eb4-bfe8-e35a5ac416ec"/*TextureFormat*/,
+          "Type": "SharpDX.DXGI.Format",
+          "Value": "R32G32B32A32_Float"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "fd7f52fe-815d-4fca-bd9b-c6231ec8930b"/*OrbitCamera*/,
+      "SymbolId": "6415ed0e-3692-45e2-8e70-fe0cf4d29ebc",
+      "InputValues": [
+        {
+          "Id": "21f595ad-0808-48f1-bdd8-118d1527944c"/*FOV*/,
+          "Type": "System.Single",
+          "Value": 110.0
+        },
+        {
+          "Id": "dd92fb0a-4b3e-4492-bf59-437d914a1ad3"/*DistanceToTarget*/,
+          "Type": "System.Single",
+          "Value": 4.02
+        },
+        {
+          "Id": "df65e717-e2fd-4e4f-9e41-d6bcd3fe67f1"/*SpinRate*/,
+          "Type": "System.Single",
+          "Value": 0.01
+        }
+      ],
+      "Outputs": []
+    }
+  ],
+  "Connections": [
+    {
+      "SourceParentOrChildId": "30bf2929-0e6c-4a07-8554-0bfded623a9b",
+      "SourceSlotId": "536fae14-b814-498c-a6b4-07775de36991",
+      "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "TargetSlotId": "66346fd2-7546-4c7d-b622-0ab2dbe774c8"
+    },
+    {
+      "SourceParentOrChildId": "ab77b1d1-7b6a-45e7-9968-66159b37d7b6",
+      "SourceSlotId": "e011dd8c-1b9c-458f-8960-e6c38e83ca74",
+      "TargetParentOrChildId": "05a5bdf8-dd43-4b52-b309-7aebcf51f4e9",
+      "TargetSlotId": "40606d4e-acaf-4f23-a845-16f0eb9b73cf"
+    },
+    {
+      "SourceParentOrChildId": "0de5a6bc-c880-41dc-84f5-b8a989305514",
+      "SourceSlotId": "2e172f90-3995-4b16-af33-9957be07323b",
+      "TargetParentOrChildId": "09a403a7-8173-4842-9fd0-3df8ee632d76",
+      "TargetSlotId": "95aaaa60-5582-40b0-907d-74a39710c006"
+    },
+    {
+      "SourceParentOrChildId": "384f41ad-15cd-4424-84fd-1a6bf0af75fa",
+      "SourceSlotId": "5538411f-e6e5-4dff-9cf4-a6410be49a8c",
+      "TargetParentOrChildId": "0de5a6bc-c880-41dc-84f5-b8a989305514",
+      "TargetSlotId": "bfd95809-61d2-49eb-85d4-ff9e36b2d158"
+    },
+    {
+      "SourceParentOrChildId": "51262741-3413-4cf0-a3d0-daee0d8f5ab2",
+      "SourceSlotId": "aacea92a-c166-46dc-b775-d28baf9820f5",
+      "TargetParentOrChildId": "1366663e-337b-48a7-8cba-2ba01ecb9b1e",
+      "TargetSlotId": "084d5d0d-8fd4-431d-bf6c-8f082cce1d3f"
+    },
+    {
+      "SourceParentOrChildId": "35854879-acc8-414f-ba19-f465d517a3f3",
+      "SourceSlotId": "75ff4efa-7ca7-4989-bd9c-42302cb248ca",
+      "TargetParentOrChildId": "1366663e-337b-48a7-8cba-2ba01ecb9b1e",
+      "TargetSlotId": "458891b9-0244-401a-b0a5-3a7ee365e7cb"
+    },
+    {
+      "SourceParentOrChildId": "4f107cb2-3113-4e45-ab86-605c80deeb17",
+      "SourceSlotId": "e4a8d926-7abd-4d2a-82a1-b7d140cb457f",
+      "TargetParentOrChildId": "14dfcbc3-3398-48f1-843e-2addc8a500a6",
+      "TargetSlotId": "36e16cc0-3c9e-4615-9ac0-2d2f07150deb"
+    },
+    {
+      "SourceParentOrChildId": "6b74e1b4-c48a-4cb9-bc80-d9be75c5ec35",
+      "SourceSlotId": "ae4addf0-08cf-4b25-9515-4fef9359d183",
+      "TargetParentOrChildId": "3003bd39-ed1b-4448-a1ee-3660156a9863",
+      "TargetSlotId": "c2107af4-7b4f-43ef-97fe-934833790032"
+    },
+    {
+      "SourceParentOrChildId": "6dbe1a39-65d5-4b45-a498-322f8b7345be",
+      "SourceSlotId": "98431e94-4b45-41c4-9388-fbb4d4aa53d7",
+      "TargetParentOrChildId": "30bf2929-0e6c-4a07-8554-0bfded623a9b",
+      "TargetSlotId": "abaa52e9-7d3d-4ae5-89d2-5251f61e5392"
+    },
+    {
+      "SourceParentOrChildId": "14dfcbc3-3398-48f1-843e-2addc8a500a6",
+      "SourceSlotId": "451bf2c8-8daf-403b-a064-c7252b03c74d",
+      "TargetParentOrChildId": "30bf2929-0e6c-4a07-8554-0bfded623a9b",
+      "TargetSlotId": "c7c524cf-e31e-4bac-8f77-58bd61b337de"
+    },
+    {
+      "SourceParentOrChildId": "69a7d400-1f08-48fe-86e2-908f13c56366",
+      "SourceSlotId": "ae4addf0-08cf-4b25-9515-4fef9359d183",
+      "TargetParentOrChildId": "35854879-acc8-414f-ba19-f465d517a3f3",
+      "TargetSlotId": "c2107af4-7b4f-43ef-97fe-934833790032"
+    },
+    {
+      "SourceParentOrChildId": "5173da70-446a-4bc5-8e75-22cb6c57a050",
+      "SourceSlotId": "e011dd8c-1b9c-458f-8960-e6c38e83ca74",
+      "TargetParentOrChildId": "384f41ad-15cd-4424-84fd-1a6bf0af75fa",
+      "TargetSlotId": "7b4992ba-30f7-42e5-b04b-ae4ec0be810e"
+    },
+    {
+      "SourceParentOrChildId": "d733aab1-591e-4aec-af8f-c7674c362886",
+      "SourceSlotId": "16e37306-05e1-4de6-babd-80a8d1472a2f",
+      "TargetParentOrChildId": "4f107cb2-3113-4e45-ab86-605c80deeb17",
+      "TargetSlotId": "2a95ac54-5ef7-4d3c-a90b-ecd5b422bddc"
+    },
+    {
+      "SourceParentOrChildId": "384f41ad-15cd-4424-84fd-1a6bf0af75fa",
+      "SourceSlotId": "ae4addf0-08cf-4b25-9515-4fef9359d183",
+      "TargetParentOrChildId": "51262741-3413-4cf0-a3d0-daee0d8f5ab2",
+      "TargetSlotId": "795aca79-dd10-4f28-a290-a30e7b27b436"
+    },
+    {
+      "SourceParentOrChildId": "593e0a66-04e7-46f9-af55-fbe301df4c74",
+      "SourceSlotId": "5ce9c625-f890-4620-9747-c98eab4b9447",
+      "TargetParentOrChildId": "5173da70-446a-4bc5-8e75-22cb6c57a050",
+      "TargetSlotId": "372288fa-3794-47ba-9f91-59240513217a"
+    },
+    {
+      "SourceParentOrChildId": "1366663e-337b-48a7-8cba-2ba01ecb9b1e",
+      "SourceSlotId": "aedaead8-ccf0-43f0-9188-a79af8d45250",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "01898885-4140-4435-bb44-a7a6f6f32657"
+    },
+    {
+      "SourceParentOrChildId": "9455f230-600c-4dcb-847d-23f6408377ab",
+      "SourceSlotId": "de6e6f65-cb51-49f1-bb90-34ed1ec963c1",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "20226539-a481-4df6-8dc7-cc65de915ea9"
+    },
+    {
+      "SourceParentOrChildId": "a596091d-98ad-4fd4-a260-1190a96e62f6",
+      "SourceSlotId": "df388f27-f5b6-417b-87a7-a6a59b625128",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "776b96c2-ec0d-4668-9112-39badbf5b619"
+    },
+    {
+      "SourceParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "SourceSlotId": "74104eb6-dfc2-4ad2-9600-91c5a33855d4",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "864dfe5a-14f2-490f-be9c-ee13ad58605c"
+    },
+    {
+      "SourceParentOrChildId": "755f96a7-92d6-4f05-a99c-4fb845daacd4",
+      "SourceSlotId": "f83f1835-477e-4bb6-93f0-14bf273b8e94",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "a5c7863e-9c26-4109-9851-3244086b0ccc"
+    },
+    {
+      "SourceParentOrChildId": "05a5bdf8-dd43-4b52-b309-7aebcf51f4e9",
+      "SourceSlotId": "de6e6f65-cb51-49f1-bb90-34ed1ec963c1",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "b909844f-cff7-4907-9bc8-e9c2281582bf"
+    },
+    {
+      "SourceParentOrChildId": "1ff0ac81-7461-4cc5-bb81-92102f8f7dd3",
+      "SourceSlotId": "68514ced-4368-459a-80e9-463a808bff0b",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "e77660e2-0fd0-45ea-8e0b-c607a757bb49"
+    },
+    {
+      "SourceParentOrChildId": "1bd726e9-148c-42f2-ac10-123ecf834f30",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "TargetSlotId": "e9712b03-e7aa-4fe5-b5cf-f2c5d0c0b0df"
+    },
+    {
+      "SourceParentOrChildId": "74035529-2e32-4021-90ef-68424daca68a",
+      "SourceSlotId": "daa79fcd-d056-4a90-a116-ff6dc10c207a",
+      "TargetParentOrChildId": "593e0a66-04e7-46f9-af55-fbe301df4c74",
+      "TargetSlotId": "993d59bb-1fc0-4857-a36d-629b0e7aa0d2"
+    },
+    {
+      "SourceParentOrChildId": "74035529-2e32-4021-90ef-68424daca68a",
+      "SourceSlotId": "fc4cae18-895a-461e-8dd6-9927caaf702c",
+      "TargetParentOrChildId": "593e0a66-04e7-46f9-af55-fbe301df4c74",
+      "TargetSlotId": "e3550929-8905-4cdf-bc85-c31e97da4baa"
+    },
+    {
+      "SourceParentOrChildId": "55835f0b-9143-44f4-85a6-503e86082aad",
+      "SourceSlotId": "ae4addf0-08cf-4b25-9515-4fef9359d183",
+      "TargetParentOrChildId": "5b3e896a-5035-4c08-8b70-1c31b1923fde",
+      "TargetSlotId": "c2107af4-7b4f-43ef-97fe-934833790032"
+    },
+    {
+      "SourceParentOrChildId": "5173da70-446a-4bc5-8e75-22cb6c57a050",
+      "SourceSlotId": "e011dd8c-1b9c-458f-8960-e6c38e83ca74",
+      "TargetParentOrChildId": "6b74e1b4-c48a-4cb9-bc80-d9be75c5ec35",
+      "TargetSlotId": "7b4992ba-30f7-42e5-b04b-ae4ec0be810e"
+    },
+    {
+      "SourceParentOrChildId": "f693a934-d550-4293-965a-3999f1aed2ee",
+      "SourceSlotId": "7a4c4feb-be2f-463e-96c6-cd9a6bad77a2",
+      "TargetParentOrChildId": "6dbe1a39-65d5-4b45-a498-322f8b7345be",
+      "TargetSlotId": "be8ea01e-8867-4ca2-b4b0-d5d20a8c7e22"
+    },
+    {
+      "SourceParentOrChildId": "b9fa04f5-5eba-4f0e-a868-683222385637",
+      "SourceSlotId": "ae4addf0-08cf-4b25-9515-4fef9359d183",
+      "TargetParentOrChildId": "755f96a7-92d6-4f05-a99c-4fb845daacd4",
+      "TargetSlotId": "7773837e-104a-4b3d-a41f-cadbd9249af2"
+    },
+    {
+      "SourceParentOrChildId": "3003bd39-ed1b-4448-a1ee-3660156a9863",
+      "SourceSlotId": "75ff4efa-7ca7-4989-bd9c-42302cb248ca",
+      "TargetParentOrChildId": "a596091d-98ad-4fd4-a260-1190a96e62f6",
+      "TargetSlotId": "87a78859-5f0c-41af-8564-ac691b8f1950"
+    },
+    {
+      "SourceParentOrChildId": "5b3e896a-5035-4c08-8b70-1c31b1923fde",
+      "SourceSlotId": "75ff4efa-7ca7-4989-bd9c-42302cb248ca",
+      "TargetParentOrChildId": "ab77b1d1-7b6a-45e7-9968-66159b37d7b6",
+      "TargetSlotId": "372288fa-3794-47ba-9f91-59240513217a"
+    },
+    {
+      "SourceParentOrChildId": "5438d07b-b344-46ae-9ac1-ca82a5257e10",
+      "SourceSlotId": "e0097148-4395-4441-83d2-c5cf5b76bb61",
+      "TargetParentOrChildId": "c3466c44-d5f6-483c-90ce-10107cf517b9",
+      "TargetSlotId": "5df18658-ef86-4c0f-8bb4-4ac3fbbf9a33"
+    },
+    {
+      "SourceParentOrChildId": "bcfdbd9c-85ff-41bb-a971-5d266ab13bb7",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "7f62f732-b9d5-4d8d-80f8-146e8bdcce23",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "98f5717c-c0de-488e-a31b-38ee914abc9d",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "b9ef57c6-4b68-4f47-828c-3c35115cf089",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "3510eede-9a77-4ea1-b4ea-759a2e542529",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "04de4c4b-bf1b-49f4-b195-6a2c97544702",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "1ac0d443-f585-49b2-aa3c-d64a85b6ee3f",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "1edead42-3733-4c23-b25c-c054899ea68a",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "28558d0c-4748-47d0-9cba-6607e891982e",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "aba3fd63-6a21-4b16-af2e-685e10b3d809",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "8b625de4-5c48-4c82-8d68-1a840c937087",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "53a47e92-318c-4db5-a4ba-bbb716d87cc7",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "943e7441-dfb0-420a-a71c-cff89e2a0211",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "1e28244a-099c-46a2-a34b-8fbc4ba432da",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "a0c747ea-1a7c-4c4b-9691-788042f61c6e",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "b72cd6d4-de90-4449-9d00-50328c69b70d",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "74601a8d-ff7d-4ed4-9120-d4f0e7690e42",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "d67cf15b-cbb8-42b5-9ee8-eb1c71ff2a25",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "a792cd25-9802-466a-96bb-3e2a35d7706e",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "e3e672ad-f0c4-450c-b5ce-e1b217051402",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "1c1628cc-0f68-496a-8e6f-6144fd992f23",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "8ec48ee4-595e-4b91-8d15-4490138821dc",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "d6ec017b-b32b-401d-871f-568df241cc79",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "55a6298e-5cd4-4dd0-8941-4012e29e1002",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "f07637bb-9db3-4925-b14c-a709121dc462",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "162dc4ea-010a-4bc2-b808-49c7e5730915",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "03cfa434-f2fa-43d3-ab54-01146dcd2032",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "9e3a4f4c-4242-4144-8861-025e53aac5ca",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "2d38f258-a46f-4cca-aac4-54fe1e0d9375",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "26c41e8a-0a41-4f2c-b3aa-985a9e114964",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "8b4d541e-7b58-4713-a249-ea1b8dc6b64d",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "7ee75ea1-f06b-40bb-98b8-dfa9cbc2ac4e",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "80ad43a6-cc59-4dfd-9687-852534adb05b",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "38dc9fe5-740c-48a5-9cac-dae9127713d4",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "16854d0e-c198-45d8-b3b5-676654405e01",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "663e476c-ecae-4f0f-9ee2-fb47772442b3",
+      "SourceSlotId": "dd9d8718-addc-49b1-bd33-aac22b366f94",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "202ce6d5-ee5a-41c7-bd04-4c1490f3ea9c"
+    },
+    {
+      "SourceParentOrChildId": "ddcbf0f3-6526-4013-8c2c-6ba40ba939f7",
+      "SourceSlotId": "5e847363-142d-4da9-a5b3-3a7aa2541bed",
+      "TargetParentOrChildId": "c5053347-682f-4133-a1ed-67cd81710f74",
+      "TargetSlotId": "20e76577-92ee-443d-9630-ebc41e38bb85"
+    },
+    {
+      "SourceParentOrChildId": "6dbe1a39-65d5-4b45-a498-322f8b7345be",
+      "SourceSlotId": "98431e94-4b45-41c4-9388-fbb4d4aa53d7",
+      "TargetParentOrChildId": "d733aab1-591e-4aec-af8f-c7674c362886",
+      "TargetSlotId": "876f6f64-7cb4-4060-8571-e0b78b437d41"
+    },
+    {
+      "SourceParentOrChildId": "09a403a7-8173-4842-9fd0-3df8ee632d76",
+      "SourceSlotId": "3bb1068a-04ef-4804-83f8-3a3ee6922e2f",
+      "TargetParentOrChildId": "ddcbf0f3-6526-4013-8c2c-6ba40ba939f7",
+      "TargetSlotId": "e010c56f-ff0b-44b6-bbd9-b50e2ccec2bf"
+    },
+    {
+      "SourceParentOrChildId": "fd7f52fe-815d-4fca-bd9b-c6231ec8930b",
+      "SourceSlotId": "14a63b62-5fbb-4f82-8cf3-d0faf279eff8",
+      "TargetParentOrChildId": "f693a934-d550-4293-965a-3999f1aed2ee",
+      "TargetSlotId": "4da253b7-4953-439a-b03f-1d515a78bddf"
+    },
+    {
+      "SourceParentOrChildId": "c3466c44-d5f6-483c-90ce-10107cf517b9",
+      "SourceSlotId": "b73347d9-9d9f-4929-b9df-e2d6db722856",
+      "TargetParentOrChildId": "fd7f52fe-815d-4fca-bd9b-c6231ec8930b",
+      "TargetSlotId": "33752356-8348-4938-8f73-6257e6bb1c1f"
+    }
+  ]
+}

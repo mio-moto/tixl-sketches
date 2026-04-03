@@ -1,0 +1,94 @@
+{
+  "Id": "694e1edc-1531-4a2f-b861-107a47b3f642"/*PFX_PIPOverlay*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "c72a49cd-b49d-4b94-93ac-454109309e32"/*Image*/,
+      "Position": {
+        "X": -33.16095,
+        "Y": -46.73047
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "1296762e-341d-4960-b1f3-1a9b838836b1"/*RenderTarget*/,
+      "Position": {
+        "X": 103.26752,
+        "Y": 118.5509
+      }
+    },
+    {
+      "ChildId": "3150ad41-0ebd-4bc5-b9c7-b206fdae01aa"/*Layer2d*/,
+      "Position": {
+        "X": 317.93115,
+        "Y": 208.1504
+      }
+    },
+    {
+      "ChildId": "3572e067-ba8d-43cc-be4c-734e33d1ac58"/*PlayVideo*/,
+      "Position": {
+        "X": 177.93115,
+        "Y": 208.1504
+      }
+    },
+    {
+      "ChildId": "3641e82d-bbd1-4bac-807f-11034bce75d7"/*RequestedResolution*/,
+      "Position": {
+        "X": -36.732483,
+        "Y": 153.5509
+      }
+    },
+    {
+      "ChildId": "3c5c627e-3d76-4c2d-ad3e-2001c72ee6a3"/*RenderTarget*/,
+      "Position": {
+        "X": 597.93115,
+        "Y": 138.1504
+      }
+    },
+    {
+      "ChildId": "7160c5bf-deb4-41ee-9b8d-1efb90b3304a"/*Text*/,
+      "Position": {
+        "X": 317.93115,
+        "Y": 243.15039
+      }
+    },
+    {
+      "ChildId": "92c02bde-9835-4bc4-8192-f2b59d79c9ba"/*Layer2d*/,
+      "Position": {
+        "X": 106.83905,
+        "Y": -46.73047
+      }
+    },
+    {
+      "ChildId": "b72ac73e-6605-462a-9953-910dbcdfcb72"/*Layer2d*/,
+      "Position": {
+        "X": 243.26752,
+        "Y": 118.5509
+      }
+    },
+    {
+      "ChildId": "ca827587-4e84-4b17-b601-fef882dc3be3"/*NotANumber*/,
+      "Position": {
+        "X": 37.931145,
+        "Y": 243.1504
+      }
+    },
+    {
+      "ChildId": "f9dce5c9-13a9-4944-b8a2-53bb115d892f"/*Execute*/,
+      "Position": {
+        "X": 457.93115,
+        "Y": 138.1504
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "69d9b5ff-2c25-40a7-8176-6c17da821ba4"/*Output*/,
+      "Position": {
+        "X": 737.93115,
+        "Y": 138.1504
+      }
+    }
+  ]
+}
