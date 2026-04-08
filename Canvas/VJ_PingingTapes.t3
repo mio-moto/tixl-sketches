@@ -236,7 +236,7 @@
         {
           "Id": "05d7962b-a02e-4ab5-9927-865375348ccd"/*InputText*/,
           "Type": "System.String",
-          "Value": "SO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nBirkenhauer\nElis X\nAras\nKizpe\nTashi Tashi\nHarald Lush\nObjekt\nCCL\nBen Klock\nMarcel Dettmann\nLen Faki\nRødhåd\nDVS1\nBarker\nZenker Brothers\nFiedel\nBinh\nDJ Nobu\nBatu\nSkee Mask\nCall Super\nrRoxymore\nJakoJako\nMarrøn\nGiGi FM\nAlarico\nSurgeon\nRegis\nBlawan\nAncient Methods\nPhase Fatale\nSHXCXCHCXSH\nHeadless Horseman\nAnswer Code Request\nMatrixxman\nLucy\nKangding Ray\nEfdemin\nFunction\nTama Sumo\nVirginia\nSteffi\nProsumer\nMassimiliano Pagliara\nDJ Pete\nPeter Van Hoesen"
+          "Value": "SO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nBirkenhauer\nDoktor Sonne\nAras\nKizpe\nTashi Tashi\nHarald Lush\nObjekt\nCCL\nBen Klock\nMarcel Dettmann\nLen Faki\nRødhåd\nDVS1\nBarker\nZenker Brothers\nFiedel\nBinh\nDJ Nobu\nBatu\nSkee Mask\nCall Super\nrRoxymore\nJakoJako\nMarrøn\nGiGi FM\nAlarico\nSurgeon\nRegis\nBlawan\nAncient Methods\nPhase Fatale\nSHXCXCHCXSH\nHeadless Horseman\nAnswer Code Request\nMatrixxman\nLucy\nKangding Ray\nEfdemin\nFunction\nTama Sumo\nVirginia\nSteffi\nProsumer\nMassimiliano Pagliara\nDJ Pete\nPeter Van Hoesen"
         }
       ],
       "Outputs": []
@@ -353,7 +353,13 @@
     {
       "Id": "724424b2-d236-40e0-a44c-08e6411749e8"/*BoolToFloat*/,
       "SymbolId": "9db2fcbf-54b9-4222-878b-80d1a0dc6edf",
-      "InputValues": [],
+      "InputValues": [
+        {
+          "Id": "253b9ae4-fac5-4641-bf0c-d8614606a840"/*BoolValue*/,
+          "Type": "System.Boolean",
+          "Value": true
+        }
+      ],
       "Outputs": []
     },
     {

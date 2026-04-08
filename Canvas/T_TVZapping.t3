@@ -81,6 +81,12 @@
       "Outputs": []
     },
     {
+      "Id": "2966b795-1b35-4d20-ac94-4860f8463f83"/*Time*/,
+      "SymbolId": "b0d75f21-df33-460b-beab-d8c5e1f23e5e",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
       "Id": "2ebd5d44-4905-435a-b75f-0c35a1b1b0db"/*Compare*/,
       "SymbolId": "026869ee-b62f-481e-aadf-f8a1db77fe65",
       "InputValues": [
@@ -386,7 +392,7 @@
         {
           "Id": "0e255347-08bc-4363-9ffa-ab863a1cea8e"/*Path*/,
           "Type": "System.String",
-          "Value": "Mio.General.Canvas:vid/rough-cut.mp4"
+          "Value": "Mio.General.Canvas:2001 A Space Odyssey (1968).mp4"
         },
         {
           "Id": "2fecfbb4-f7d9-4c53-95ae-b64ccbb6fbad"/*Volume*/,
@@ -396,7 +402,7 @@
         {
           "Id": "48e62a3c-a903-4a9b-a44a-148c6c07ac1e"/*OverrideTimeInSecs*/,
           "Type": "System.Single",
-          "Value": 9.2
+          "Value": 0.0
         },
         {
           "Id": "b62c208c-3735-4130-87de-8c03c8a9b5fa"/*IsPreciseAtPlayback*/,
@@ -406,7 +412,7 @@
         {
           "Id": "e9c15b3f-8c4a-411d-b9b3-795d64d6bd20"/*ResyncThreshold*/,
           "Type": "System.Single",
-          "Value": 0.001
+          "Value": 0.1
         }
       ],
       "Outputs": []
@@ -897,8 +903,8 @@
       "TargetSlotId": "c2107af4-7b4f-43ef-97fe-934833790032"
     },
     {
-      "SourceParentOrChildId": "24bd0f67-2d2d-4737-a1b3-f32887fde414",
-      "SourceSlotId": "caed8758-f20f-4be7-9861-b6ec90e816d2",
+      "SourceParentOrChildId": "2966b795-1b35-4d20-ac94-4860f8463f83",
+      "SourceSlotId": "fd3049aa-4c22-405b-b9b4-0a2474d0e377",
       "TargetParentOrChildId": "934c3964-07a4-469a-8a34-a716f6479fd5",
       "TargetSlotId": "48e62a3c-a903-4a9b-a44a-148c6c07ac1e"
     },

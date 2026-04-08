@@ -75,6 +75,13 @@
       }
     },
     {
+      "ChildId": "2966b795-1b35-4d20-ac94-4860f8463f83"/*Time*/,
+      "Position": {
+        "X": 253.69852,
+        "Y": 53.84961
+      }
+    },
+    {
       "ChildId": "2ebd5d44-4905-435a-b75f-0c35a1b1b0db"/*Compare*/,
       "Position": {
         "X": 715.99756,

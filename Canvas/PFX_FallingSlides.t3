@@ -213,6 +213,11 @@
           "Value": 0.0
         },
         {
+          "Id": "ddd93b06-118e-43e0-85f6-c150faf91d04"/*Offset*/,
+          "Type": "System.Single",
+          "Value": 0.29
+        },
+        {
           "Id": "f12fee9a-dd91-40c2-9aa5-ea34804a858d"/*Bias*/,
           "Type": "System.Single",
           "Value": 0.18

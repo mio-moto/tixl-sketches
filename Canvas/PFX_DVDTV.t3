@@ -1165,11 +1165,19 @@
       "SymbolId": "d8c5330f-59b5-4907-b845-a02def3042fa",
       "InputValues": [
         {
+          "Id": "4618d8e0-2718-4373-a071-88ec1843b0c8"/*Stretch*/,
+          "Type": "System.Numerics.Vector2",
+          "Value": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        {
           "Id": "a384be77-c5fc-47b3-9ec3-960db9f9bae9"/*Position*/,
           "Type": "System.Numerics.Vector2",
           "Value": {
-            "X": -0.09,
-            "Y": -0.03
+            "X": 2.0,
+            "Y": -0.02
           }
         },
         {

@@ -12,6 +12,13 @@
   ],
   "SymbolChildUis": [
     {
+      "ChildId": "14445803-345d-422b-b27a-ef6533402b4e"/*Color*/,
+      "Position": {
+        "X": 169.09265,
+        "Y": 482.78137
+      }
+    },
+    {
       "ChildId": "16d4db66-bb37-4db4-9863-d359bbeef144"/*BuildRandomString*/,
       "Position": {
         "X": 420.0,
@@ -106,7 +113,7 @@
       "ChildId": "cd06d072-0698-4b89-8bf6-0c93819849d2"/*RenderTarget*/,
       "Position": {
         "X": 420.0,
-        "Y": 245.00024
+        "Y": 280.00024
       }
     },
     {

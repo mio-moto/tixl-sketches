@@ -74,12 +74,12 @@
         {
           "Id": "19f7822f-e8df-4990-950b-2a39f62c59c0"/*ShiftHue*/,
           "Type": "System.Single",
-          "Value": 0.0
+          "Value": -0.001
         },
         {
           "Id": "1e6d0245-b5d4-45a5-8dac-6d905837060d"/*SampleDistance*/,
           "Type": "System.Single",
-          "Value": 0.06
+          "Value": 0.02
         },
         {
           "Id": "4232af30-de5f-4fd6-af92-d704e26f6850"/*LuminosityRange*/,
@@ -95,24 +95,29 @@
           "Value": false
         },
         {
+          "Id": "54ecb0e0-6fc0-4441-b26b-b820e95475a0"/*ShiftBrightness*/,
+          "Type": "System.Single",
+          "Value": -0.002
+        },
+        {
           "Id": "62c7b815-b189-4cd7-bad2-bb1c4251e646"/*Zoom*/,
           "Type": "System.Single",
-          "Value": 1.001
+          "Value": 1.003
         },
         {
           "Id": "73ba7691-784f-4706-8a88-9305f723c4cc"/*Displacement*/,
           "Type": "System.Single",
-          "Value": -0.1
+          "Value": -2.0
         },
         {
           "Id": "c027bc94-4ef8-4828-8df5-d30abbd31cbc"/*AmplifyEdges*/,
           "Type": "System.Single",
-          "Value": -0.6
+          "Value": 0.84
         },
         {
           "Id": "c364b443-300e-4323-b0cc-f615649995a5"/*BlurRadius*/,
           "Type": "System.Single",
-          "Value": 0.0
+          "Value": 0.14
         },
         {
           "Id": "c7f25ad5-1907-4851-8057-7c73f82da1be"/*RangeClamping*/,
@@ -127,7 +132,7 @@
         {
           "Id": "f153041e-6542-4197-a192-6f46e951f8df"/*ShiftSaturation*/,
           "Type": "System.Single",
-          "Value": 0.0
+          "Value": -0.0
         }
       ],
       "Outputs": []

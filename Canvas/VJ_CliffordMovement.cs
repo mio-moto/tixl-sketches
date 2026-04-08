@@ -26,6 +26,15 @@ namespace Mio.General.Canvas{
         [Output(Guid = "ae993afe-2f22-4c14-93a0-4d34201c1fb7")]
         public readonly Slot<T3.Core.DataTypes.Texture2D> RawOutput = new Slot<T3.Core.DataTypes.Texture2D>();
 
+        [Output(Guid = "f23c9667-ae5d-4d3c-9c1d-2edf2c203cea")]
+        public readonly Slot<T3.Core.DataTypes.Texture2D> MirrorOutput = new Slot<T3.Core.DataTypes.Texture2D>();
+
+        [Output(Guid = "28dc4048-0c8a-45fc-9228-894e0b9095ff")]
+        public readonly Slot<T3.Core.DataTypes.Texture2D> FeedbackOutput = new Slot<T3.Core.DataTypes.Texture2D>();
+
+        [Output(Guid = "835d4150-41d1-49a5-b2ed-ecc456e4a24e")]
+        public readonly Slot<T3.Core.DataTypes.Texture2D> FeedbackMirrorOutput = new Slot<T3.Core.DataTypes.Texture2D>();
+
     }
 }
 

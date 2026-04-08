@@ -1,0 +1,101 @@
+{
+  "Id": "c919b832-bb11-453b-86ca-29da5ef81b44"/*VJ_CenterKaleidoscope*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "1095ccd1-8e21-48c4-926f-5e045bd8d697"/*Speed*/,
+      "Position": {
+        "X": 181.04639,
+        "Y": 360.03516
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "1c3c7d82-3b23-4e77-b293-239565874b8d"/*SampleGradient*/,
+      "Position": {
+        "X": 193.2948,
+        "Y": 104.01123
+      }
+    },
+    {
+      "ChildId": "4710847b-1b71-4909-9efc-8a2cc3ec8c0d"/*ColorPalette*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 232.47656
+      }
+    },
+    {
+      "ChildId": "8835562c-546d-4dec-9bd8-aa29c4c64eb0"/*SampleGradient*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 197.47656
+      }
+    },
+    {
+      "ChildId": "88c76e46-7f2e-4eeb-82ad-9f6770a99b4a"/*FloatToInt*/,
+      "Position": {
+        "X": 321.0464,
+        "Y": 290.03516
+      }
+    },
+    {
+      "ChildId": "929ec276-9cb1-4b05-a096-3507d70f67f8"/*ColorPalette*/,
+      "Position": {
+        "X": 53.2948,
+        "Y": 139.01123
+      }
+    },
+    {
+      "ChildId": "b2b51f88-b061-4845-9ce2-efd28e1e2ee9"/*RyojiPattern2*/,
+      "Position": {
+        "X": 461.0464,
+        "Y": 150.03516
+      }
+    },
+    {
+      "ChildId": "b7e09b1e-edf2-4054-b552-5da9aca1bcd8"/*SampleGradient*/,
+      "Position": {
+        "X": 231.04395,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "c432d22b-f9bc-413e-8227-3cefe114489d"/*Counter*/,
+      "Position": {
+        "X": 321.0464,
+        "Y": 325.03516
+      }
+    },
+    {
+      "ChildId": "d44aaa18-3f64-48ce-ad94-5392192f26c7"/*Counter*/,
+      "Position": {
+        "X": 181.04639,
+        "Y": 290.03516
+      }
+    },
+    {
+      "ChildId": "ddb7944b-787c-4036-be8d-7df615b1badb"/*KochKaleidoskope*/,
+      "Position": {
+        "X": 461.0464,
+        "Y": 360.03516
+      }
+    },
+    {
+      "ChildId": "e0bea6b9-b373-4d3d-8a40-94923740d4d3"/*ColorPalette*/,
+      "Position": {
+        "X": 91.043945,
+        "Y": 35.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "a6a96bda-db21-40af-b228-b2a3188d2a88"/*Output*/,
+      "Position": {
+        "X": 461.0464,
+        "Y": 395.03516
+      }
+    }
+  ]
+}

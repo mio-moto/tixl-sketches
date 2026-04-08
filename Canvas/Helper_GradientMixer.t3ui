@@ -1,0 +1,73 @@
+{
+  "Id": "077610fb-1d24-4d0a-98eb-932e9421c746"/*Helper_GradientMixer*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "2ba54b2f-cf4b-49cf-98f6-93d2aa137782"/*UseBaseGradient*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 105.0
+      }
+    },
+    {
+      "InputId": "3577126f-97a5-48c2-ade2-ecc276615661"/*OffGradientNumber*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 35.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "2966a6f4-19d0-4291-8396-178c5e08e5c6"/*ColorPalette*/,
+      "Position": {
+        "X": 420.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "3e10f0f3-eaf9-415a-817a-989a3e80b1fd"/*Off Gradient*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "48da5594-0ead-4ebb-aeaf-613fbf45f9b6"/*Ease*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 105.0
+      }
+    },
+    {
+      "ChildId": "491d8a14-9c8e-41ba-a04e-77fd9873f04e"/*BlendGradients*/,
+      "Position": {
+        "X": 420.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "7178dc25-621d-4a04-8881-f01153184d69"/*BoolToFloat*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 105.0
+      }
+    },
+    {
+      "ChildId": "7d4dfedb-2952-4c75-a140-f421989490dd"/*ModInt*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 70.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "63824ab2-70cc-461c-a9f0-55c2e8c8fc3e"/*Result*/,
+      "Position": {
+        "X": 830.0,
+        "Y": 65.0
+      }
+    }
+  ]
+}

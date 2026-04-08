@@ -8,6 +8,23 @@
   ],
   "Children": [
     {
+      "Id": "14445803-345d-422b-b27a-ef6533402b4e"/*Color*/,
+      "SymbolId": "70176d3c-825c-40b3-8121-a465735518fe",
+      "InputValues": [
+        {
+          "Id": "03dc1ef1-d75a-4f65-a607-d5dc4de56a2c"/*RGBA*/,
+          "Type": "System.Numerics.Vector4",
+          "Value": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0,
+            "W": 0.98
+          }
+        }
+      ],
+      "Outputs": []
+    },
+    {
       "Id": "16d4db66-bb37-4db4-9863-d359bbeef144"/*BuildRandomString*/,
       "SymbolId": "7b21f10b-3548-4a23-95df-360addaeb03d",
       "InputValues": [
@@ -292,7 +309,7 @@
         {
           "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
           "Type": "System.String",
-          "Value": "SO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nElis X\nElis X\nElis X\nElis X\nElis X\nElis X\nElis X\nElis X\nElis X\nElis X\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nAcud Macht Neu\nAstra Kulturhaus\nArkaoda\nAeden\nBadehaus\nBallhaus Spandau\nBeate Uwe\nBerghain\nBi Nuu\nBirgit\nBohnengold\nBricks\nBulbul\nBusche Club\nCassiopeia\nClub der Visionaere\nDer Weiße Hase\nDuncker\nElse\nFrannz\nGolden Gate\nGretchen\nHafenbar\nHavanna\nHeidegluehen\nHoppetosse\nInsomnia\nKater Blau\nKitKatClub\nLido\nLokschuppen\nLUX\nMatrix\nMaxxim\nM-bia\nMonarch\nOhm\nOst\nOXI\nPaloma\nPanke\nPrince Charles\nPrivatclub\nRitter Butzke\nRSO.Berlin\nSchwuZ\nKaffee Burger\nKing Size Bar\nKinzo\nKlub der Republik\nKitKatClub\nSchwuZ\nSilverwings Club\nInsomnia\nLab.oratory\n://about blank\nKater Blau\nGriessmuehle\nSalon zur Wilden Renate\nElse\nOXI\nAnomalie Art Club\nAeden\nClub OST\nRSO.Berlin\nBerghain\nPanorama Bar\nBar25\nWatergate\nWeekend\nClub der Visionaere\nKater Holzig\nSisyphos\nRitter Butzke\nSO36\nDschungel\nMetropol\nQuartier Latin\nEimer\nEx'n'Pop\nKnaack Klub\nJoy\nUfo\nTresor\nE-Werk\nBunker\nPlanet\nOstgut\nWMF\nMaria am Ostbahnhof\nCasino"
+          "Value": "SO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nSO808\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nBirkenhauer\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nDoktor Sonne\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nAras\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nKizpe\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nTashi Tashi\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nHarald Lush\nAcud Macht Neu\nAstra Kulturhaus\nArkaoda\nAeden\nBadehaus\nBallhaus Spandau\nBeate Uwe\nBerghain\nBi Nuu\nBirgit\nBohnengold\nBricks\nBulbul\nBusche Club\nCassiopeia\nClub der Visionaere\nDer Weiße Hase\nDuncker\nElse\nFrannz\nGolden Gate\nGretchen\nHafenbar\nHavanna\nHeidegluehen\nHoppetosse\nInsomnia\nKater Blau\nKitKatClub\nLido\nLokschuppen\nLUX\nMatrix\nMaxxim\nM-bia\nMonarch\nOhm\nOst\nOXI\nPaloma\nPanke\nPrince Charles\nPrivatclub\nRitter Butzke\nRSO.Berlin\nSchwuZ\nKaffee Burger\nKing Size Bar\nKinzo\nKlub der Republik\nKitKatClub\nSchwuZ\nSilverwings Club\nInsomnia\nLab.oratory\n://about blank\nKater Blau\nGriessmuehle\nSalon zur Wilden Renate\nElse\nOXI\nAnomalie Art Club\nAeden\nClub OST\nRSO.Berlin\nBerghain\nPanorama Bar\nBar25\nWatergate\nWeekend\nClub der Visionaere\nKater Holzig\nSisyphos\nRitter Butzke\nSO36\nDschungel\nMetropol\nQuartier Latin\nEimer\nEx'n'Pop\nKnaack Klub\nJoy\nUfo\nTresor\nE-Werk\nBunker\nPlanet\nOstgut\nWMF\nMaria am Ostbahnhof\nCasino"
         }
       ],
       "Outputs": []
@@ -411,6 +428,12 @@
       "SourceSlotId": "aba9eb42-5af0-4165-a2bd-fdfcd4340484",
       "TargetParentOrChildId": "2e0d2434-901a-4dc0-a4b8-c27acba5bc57",
       "TargetSlotId": "041c98b6-4450-46d7-9dae-c9030c88b9e6"
+    },
+    {
+      "SourceParentOrChildId": "14445803-345d-422b-b27a-ef6533402b4e",
+      "SourceSlotId": "fae78369-9db9-4b00-94f2-89e7581db426",
+      "TargetParentOrChildId": "4098591e-3b5f-4f79-8525-c7c2a57b44ed",
+      "TargetSlotId": "0e5f05b4-5e8a-4f6d-8cac-03b04649eb67"
     },
     {
       "SourceParentOrChildId": "2e0d2434-901a-4dc0-a4b8-c27acba5bc57",

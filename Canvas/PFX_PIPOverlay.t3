@@ -51,7 +51,7 @@
           "Type": "System.Numerics.Vector2",
           "Value": {
             "X": 1.05,
-            "Y": -0.59
+            "Y": 0.59
           }
         }
       ],
@@ -64,7 +64,7 @@
         {
           "Id": "0e255347-08bc-4363-9ffa-ab863a1cea8e"/*Path*/,
           "Type": "System.String",
-          "Value": "Mio.General.Canvas:vid/rough-cut.mp4"
+          "Value": "Mio.General.Canvas:vid/Neon.Genesis.Evangelion.S01E02.mp4"
         },
         {
           "Id": "2fecfbb4-f7d9-4c53-95ae-b64ccbb6fbad"/*Volume*/,
@@ -74,7 +74,7 @@
         {
           "Id": "48e62a3c-a903-4a9b-a44a-148c6c07ac1e"/*OverrideTimeInSecs*/,
           "Type": "System.Single",
-          "Value": 0.0
+          "Value": 1000.0
         },
         {
           "Id": "b62c208c-3735-4130-87de-8c03c8a9b5fa"/*IsPreciseAtPlayback*/,
@@ -84,7 +84,7 @@
         {
           "Id": "e9c15b3f-8c4a-411d-b9b3-795d64d6bd20"/*ResyncThreshold*/,
           "Type": "System.Single",
-          "Value": 0.1
+          "Value": 100000.0
         }
       ],
       "Outputs": []
@@ -98,6 +98,12 @@
     {
       "Id": "3c5c627e-3d76-4c2d-ad3e-2001c72ee6a3"/*RenderTarget*/,
       "SymbolId": "f9fe78c5-43a6-48ae-8e8c-6cdbbc330dd1",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "5a3dc0e4-a610-438b-aa63-2990e25caeab"/*Time*/,
+      "SymbolId": "b0d75f21-df33-460b-beab-d8c5e1f23e5e",
       "InputValues": [],
       "Outputs": []
     },
@@ -129,8 +135,8 @@
           "Id": "de0fed7d-d2af-4424-baf3-81606e26559f"/*Position*/,
           "Type": "System.Numerics.Vector2",
           "Value": {
-            "X": 0.68,
-            "Y": -0.405
+            "X": 0.8,
+            "Y": 0.405
           }
         },
         {
@@ -160,7 +166,7 @@
           "Id": "4618d8e0-2718-4373-a071-88ec1843b0c8"/*Stretch*/,
           "Type": "System.Numerics.Vector2",
           "Value": {
-            "X": 0.98,
+            "X": 0.76,
             "Y": 1.0
           }
         },
@@ -169,7 +175,7 @@
           "Type": "System.Numerics.Vector2",
           "Value": {
             "X": 1.05,
-            "Y": -0.59
+            "Y": 0.59
           }
         }
       ],
@@ -206,12 +212,6 @@
       "SourceSlotId": "fa56b47f-1b16-45d5-80cd-32c5a872acf4",
       "TargetParentOrChildId": "3150ad41-0ebd-4bc5-b9c7-b206fdae01aa",
       "TargetSlotId": "2a95ac54-5ef7-4d3c-a90b-ecd5b422bddc"
-    },
-    {
-      "SourceParentOrChildId": "ca827587-4e84-4b17-b601-fef882dc3be3",
-      "SourceSlotId": "caed8758-f20f-4be7-9861-b6ec90e816d2",
-      "TargetParentOrChildId": "3572e067-ba8d-43cc-be4c-734e33d1ac58",
-      "TargetSlotId": "48e62a3c-a903-4a9b-a44a-148c6c07ac1e"
     },
     {
       "SourceParentOrChildId": "f9dce5c9-13a9-4944-b8a2-53bb115d892f",

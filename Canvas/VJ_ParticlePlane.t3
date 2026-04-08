@@ -1,6 +1,11 @@
 {
   "Id": "f1be1503-72d7-487f-8e7c-35069f0c8e22"/*VJ_ParticlePlane*/,
-  "Inputs": [],
+  "Inputs": [
+    {
+      "Id": "c6196e04-0cb7-48f3-8147-a55305a76fc3"/*SwitchEveryNth*/,
+      "DefaultValue": 0
+    }
+  ],
   "Children": [
     {
       "Id": "03cfa434-f2fa-43d3-ab54-01146dcd2032"/*Prime*/,
@@ -231,6 +236,57 @@
           "Id": "ceeae47b-d792-471d-a825-49e22749b7b9"/*InputString*/,
           "Type": "System.String",
           "Value": "float3 HullFunction(float u, float v) {\n  return float3(\n    v * cos(v) * cos(u * v),\n    u * sin(u / v) + sin(v),\n    -u * sin(v)\n  );\n}"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "1c5ffcf9-0ec8-436f-8fa5-c3ea087785b5"/*RemapColor*/,
+      "SymbolId": "da93f7d1-ef91-4b4a-9708-2d9b1baa4c14",
+      "InputValues": [
+        {
+          "Id": "97771732-56fb-4e0c-915d-c79321ba27b5"/*GainAndBias*/,
+          "Type": "System.Numerics.Vector2",
+          "Value": {
+            "X": 0.5,
+            "Y": 0.45
+          }
+        },
+        {
+          "Id": "b1763a8b-aa98-4e00-a47c-a5d0d750ae6e"/*Cycle*/,
+          "Type": "System.Single",
+          "Value": 0.03
+        },
+        {
+          "Id": "c45d487b-3221-44c7-bf9e-b982a65280f6"/*Gradient*/,
+          "Type": "T3.Core.DataTypes.Gradient",
+          "Value": {
+            "Gradient": {
+              "Interpolation": "Linear",
+              "Steps": [
+                {
+                  "Id": "0cb29dd6-00ff-4318-9566-07171f928626",
+                  "NormalizedPosition": 0.0,
+                  "Color": {
+                    "R": 1.0,
+                    "G": 0.99999,
+                    "B": 1.0,
+                    "A": 1.0
+                  }
+                },
+                {
+                  "Id": "d3d11261-3a30-4118-a3fb-72dadeb63db9",
+                  "NormalizedPosition": 1.0,
+                  "Color": {
+                    "R": 0.0,
+                    "G": 1.2159347E-11,
+                    "B": 1E-06,
+                    "A": 1.0
+                  }
+                }
+              ]
+            }
+          }
         }
       ],
       "Outputs": []
@@ -1180,8 +1236,14 @@
   ],
   "Connections": [
     {
-      "SourceParentOrChildId": "30bf2929-0e6c-4a07-8554-0bfded623a9b",
-      "SourceSlotId": "536fae14-b814-498c-a6b4-07775de36991",
+      "SourceParentOrChildId": "1c5ffcf9-0ec8-436f-8fa5-c3ea087785b5",
+      "SourceSlotId": "16e37306-05e1-4de6-babd-80a8d1472a2f",
+      "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "TargetSlotId": "3fa1c13e-98a9-41fb-9d14-b1c6554f320a"
+    },
+    {
+      "SourceParentOrChildId": "6dbe1a39-65d5-4b45-a498-322f8b7345be",
+      "SourceSlotId": "98431e94-4b45-41c4-9388-fbb4d4aa53d7",
       "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
       "TargetSlotId": "66346fd2-7546-4c7d-b622-0ab2dbe774c8"
     },
@@ -1196,6 +1258,12 @@
       "SourceSlotId": "2e172f90-3995-4b16-af33-9957be07323b",
       "TargetParentOrChildId": "09a403a7-8173-4842-9fd0-3df8ee632d76",
       "TargetSlotId": "95aaaa60-5582-40b0-907d-74a39710c006"
+    },
+    {
+      "SourceParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "SourceSlotId": "c6196e04-0cb7-48f3-8147-a55305a76fc3",
+      "TargetParentOrChildId": "09a403a7-8173-4842-9fd0-3df8ee632d76",
+      "TargetSlotId": "996cc728-62ab-4c77-b454-59f0d2f25c00"
     },
     {
       "SourceParentOrChildId": "384f41ad-15cd-4424-84fd-1a6bf0af75fa",
@@ -1220,6 +1288,12 @@
       "SourceSlotId": "e4a8d926-7abd-4d2a-82a1-b7d140cb457f",
       "TargetParentOrChildId": "14dfcbc3-3398-48f1-843e-2addc8a500a6",
       "TargetSlotId": "36e16cc0-3c9e-4615-9ac0-2d2f07150deb"
+    },
+    {
+      "SourceParentOrChildId": "30bf2929-0e6c-4a07-8554-0bfded623a9b",
+      "SourceSlotId": "536fae14-b814-498c-a6b4-07775de36991",
+      "TargetParentOrChildId": "1c5ffcf9-0ec8-436f-8fa5-c3ea087785b5",
+      "TargetSlotId": "876f6f64-7cb4-4060-8571-e0b78b437d41"
     },
     {
       "SourceParentOrChildId": "6b74e1b4-c48a-4cb9-bc80-d9be75c5ec35",
