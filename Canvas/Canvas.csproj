@@ -2,9 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
-    <VersionPrefix>1.199.51</VersionPrefix>
+    <VersionPrefix>1.228.53</VersionPrefix>
     <Nullable>enable</Nullable>
-    <EditorVersion>4.1.0</EditorVersion>
+    <EditorVersion>4.1.1</EditorVersion>
     <IsEditorOnly>false</IsEditorOnly>
     <ImplicitUsings>disabled</ImplicitUsings>
     <Deterministic>true</Deterministic>

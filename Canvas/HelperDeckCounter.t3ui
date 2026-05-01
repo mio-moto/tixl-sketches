@@ -1,0 +1,94 @@
+{
+  "Id": "ff6a9780-87c7-4382-b46e-cb1e98003630"/*HelperDeckCounter*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "6916518a-107f-439a-88bf-ed37133a0adb"/*DeckB*/,
+      "Position": {
+        "X": -45.750732,
+        "Y": 14.836517
+      }
+    },
+    {
+      "InputId": "8a38ae50-5042-45d1-b3e4-92c4129e5ea7"/*DeckA*/,
+      "Position": {
+        "X": -45.750732,
+        "Y": -20.163483
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "254b6017-82e0-44aa-8551-94daf0b4d965"/*SumInts*/,
+      "Position": {
+        "X": -45.750732,
+        "Y": 52.16516
+      }
+    },
+    {
+      "ChildId": "6460ecd2-762f-4ea1-9a1b-f71b0357b631"/*PickTexture*/,
+      "Position": {
+        "X": 285.84454,
+        "Y": 177.50778
+      }
+    },
+    {
+      "ChildId": "7283b1c1-be3c-4d73-b120-dd3998f85901"/*GetIntVar*/,
+      "Position": {
+        "X": -185.75073,
+        "Y": 122.16516
+      }
+    },
+    {
+      "ChildId": "97f0b3c5-45a7-4e38-9574-faebfb402a5b"/*GetIntVar*/,
+      "Position": {
+        "X": -185.75073,
+        "Y": 52.16516
+      }
+    },
+    {
+      "ChildId": "a97047c8-159c-4ea0-bc7e-aaf3f5d46417"/*GetIntVar*/,
+      "Position": {
+        "X": -185.75073,
+        "Y": 87.16516
+      }
+    },
+    {
+      "ChildId": "cb444fe3-3d39-47fe-9137-e73f48983abb"/*AddInts*/,
+      "Position": {
+        "X": 145.84454,
+        "Y": 247.50778
+      }
+    },
+    {
+      "ChildId": "f735631a-3518-44a4-86ad-b9d2b48e06da"/*PickTexture*/,
+      "Position": {
+        "X": 285.84454,
+        "Y": -20.745697
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "50d95abe-37b4-45c3-9ede-d8d6065e8e9d"/*CurrentDeck*/,
+      "Position": {
+        "X": 285.84454,
+        "Y": 84.2543
+      }
+    },
+    {
+      "OutputId": "aa16c884-0073-4e39-9a0e-49383a529532"/*NextDeck*/,
+      "Position": {
+        "X": 425.84454,
+        "Y": 177.50778
+      }
+    },
+    {
+      "OutputId": "3c19ee22-2431-4d1e-8369-aa44aea892a0"/*DeckCounter*/,
+      "Position": {
+        "X": -45.750732,
+        "Y": 157.16516
+      }
+    }
+  ]
+}

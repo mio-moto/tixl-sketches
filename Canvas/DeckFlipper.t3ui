@@ -1,0 +1,83 @@
+{
+  "FormatVersion": 2,
+  "TixlVersion": "4.2.0.2",
+  "Id": "558c97a9-8a4c-4f3a-889c-da7d1eff35de"/*DeckFlipper*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "06a01f7e-a11a-4945-a564-9c62b63cbef0"/*DeckA*/,
+      "Position": {
+        "X": -299.9928,
+        "Y": 64.396454
+      }
+    },
+    {
+      "InputId": "9c4c84fa-ed65-4b60-a560-6dcb411b6f25"/*Flip*/,
+      "Position": {
+        "X": -299.9928,
+        "Y": 134.99637
+      }
+    },
+    {
+      "InputId": "cc0fc0af-3ce3-4321-9efb-406a939f0bee"/*DeckB*/,
+      "Position": {
+        "X": -299.9928,
+        "Y": 99.396454
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "0cd5292d-8270-43d2-8b84-937e08d3ff58"/*BoolToInt*/,
+      "Position": {
+        "X": -73.82019,
+        "Y": -33.583252
+      }
+    },
+    {
+      "ChildId": "6297a750-45a9-45b5-a319-530786459e0e"/*PickTexture*/,
+      "Position": {
+        "X": 66.17982,
+        "Y": 184.19403
+      }
+    },
+    {
+      "ChildId": "b537be39-9a46-4d2b-9377-fc2a069929bd"/*PickTexture*/,
+      "Position": {
+        "X": 66.17981,
+        "Y": -103.58325
+      }
+    },
+    {
+      "ChildId": "d692d9ef-0522-4350-9559-b801067705ca"/*BoolToInt*/,
+      "Position": {
+        "X": -73.82018,
+        "Y": 254.19403
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "3dccf09a-bbb2-4341-9cf1-926006a17da7"/*CurrentOutput*/,
+      "Position": {
+        "X": 206.17981,
+        "Y": -103.58325
+      }
+    },
+    {
+      "OutputId": "2bf58276-fb6b-455b-9f4e-efffaa72b227"/*NextOutput*/,
+      "Position": {
+        "X": 206.17981,
+        "Y": 184.19403
+      }
+    }
+  ],
+  "Settings": {
+    "Timeline": {
+  "ScaleX": 80.0,
+  "ScrollX": -2.5,
+  "Mode": "DopeView",
+  "TimelineHeight": -1
+}
+  }
+}

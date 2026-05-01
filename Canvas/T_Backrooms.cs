@@ -8,17 +8,23 @@ namespace Mio.General.Canvas{
     internal sealed class T_Backrooms : Instance<T_Backrooms>
     {
 
-        [Input(Guid = "da7b2e69-a538-44e0-b14f-3091ac18a058")]
-        public readonly InputSlot<bool> ToProjectionTwo = new InputSlot<bool>();
+        [Input(Guid = "077c5aa0-04bd-46fa-8692-5ce1d2337cec")]
+        public readonly InputSlot<bool> Transition = new InputSlot<bool>();
 
-        [Input(Guid = "28cc48bf-e5a5-4578-a13e-37c1c7f04e78")]
-        public readonly InputSlot<T3.Core.DataTypes.Texture2D> ProjectionOne = new InputSlot<T3.Core.DataTypes.Texture2D>();
+        [Input(Guid = "55b89bff-9acf-4c6f-a406-8ac52de52a4c")]
+        public readonly InputSlot<T3.Core.DataTypes.Texture2D> DeckA = new InputSlot<T3.Core.DataTypes.Texture2D>();
 
-        [Input(Guid = "87bf2ac1-cc0d-4398-905a-f948dc2f73b2")]
-        public readonly InputSlot<T3.Core.DataTypes.Texture2D> ProjectionTwo = new InputSlot<T3.Core.DataTypes.Texture2D>();
+        [Input(Guid = "6707ecec-f75b-44ae-b53a-cfb09c19dfc4")]
+        public readonly InputSlot<T3.Core.DataTypes.Texture2D> DeckB = new InputSlot<T3.Core.DataTypes.Texture2D>();
+
+        [Input(Guid = "7c91677b-e00e-464d-be16-9e28c7821372")]
+        public readonly InputSlot<float> EaseTime = new InputSlot<float>();
 
         [Output(Guid = "fa1b6998-7aec-4fc2-8fa2-e4c54cad3339")]
         public readonly Slot<T3.Core.DataTypes.Texture2D> Output = new Slot<T3.Core.DataTypes.Texture2D>();
+
+        [Output(Guid = "d2d90387-8625-4295-a3cd-9a0ebbf51809")]
+        public readonly Slot<int> BackroomsCounter = new Slot<int>();
 
     }
 }

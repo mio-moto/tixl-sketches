@@ -23,6 +23,9 @@ namespace Mio.General.Canvas{
         [Output(Guid = "40b3232c-7b86-4db5-8d8c-0b14498663bd")]
         public readonly Slot<T3.Core.DataTypes.Texture2D> MirrorImage = new Slot<T3.Core.DataTypes.Texture2D>();
 
+        [Output(Guid = "edaec665-ad15-46ce-be50-14d12ec8cc29")]
+        public readonly Slot<T3.Core.DataTypes.Texture2D> RotatingMirrorOilImage = new Slot<T3.Core.DataTypes.Texture2D>();
+
     }
 }
 

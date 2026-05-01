@@ -1,22 +1,7 @@
 {
   "Id": "ad783fb0-a662-4ebd-842c-58ddba262770"/*T_TVStandBy*/,
   "Description": "",
-  "InputUis": [
-    {
-      "InputId": "997a2c70-b6ca-42dd-ac64-521026370f5c"/*ShowStandBy*/,
-      "Position": {
-        "X": 1924.0403,
-        "Y": -120.343994
-      }
-    },
-    {
-      "InputId": "ea8639e1-5a9e-4c5e-b61b-9fd091bc3a8b"/*Projection*/,
-      "Position": {
-        "X": 1924.0403,
-        "Y": -190.344
-      }
-    }
-  ],
+  "InputUis": [],
   "SymbolChildUis": [
     {
       "ChildId": "0f8b0cce-0014-4468-a9f8-e48f587eb552"/*PickFloat*/,
@@ -86,13 +71,6 @@
       "Position": {
         "X": 1085.9702,
         "Y": 144.71729
-      }
-    },
-    {
-      "ChildId": "5a187a47-be49-4c36-88ae-d495c66c6a2d"/*T_Crossfade*/,
-      "Position": {
-        "X": 2064.0403,
-        "Y": -190.344
       }
     },
     {

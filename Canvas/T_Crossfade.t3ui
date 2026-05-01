@@ -3,31 +3,31 @@
   "Description": "",
   "InputUis": [
     {
-      "InputId": "4cd92447-5101-42c7-aa59-8a5496a4bb33"/*ImageOne*/,
+      "InputId": "4cd92447-5101-42c7-aa59-8a5496a4bb33"/*DeckA*/,
       "Position": {
-        "X": 457.70044,
-        "Y": 44.87027
+        "X": 451.69556,
+        "Y": -3.492279
       }
     },
     {
-      "InputId": "572742aa-77c0-443a-b18c-1b748ca33bc1"/*ImageTwo*/,
+      "InputId": "572742aa-77c0-443a-b18c-1b748ca33bc1"/*DeckB*/,
       "Position": {
-        "X": 3.9569092,
-        "Y": 445.0843
+        "X": 451.69556,
+        "Y": 31.507812
       }
     },
     {
-      "InputId": "6cdfad2f-4f38-4584-a91a-c2f6cbf6131d"/*ShowImageTwo*/,
+      "InputId": "a98043b8-2412-4532-8ab2-e0d5f8098cb2"/*Crossfade*/,
       "Position": {
-        "X": 40.70294,
-        "Y": 79.428116
+        "X": 254.87646,
+        "Y": 136.84442
       }
     },
     {
       "InputId": "c8931131-fe78-4625-a7d6-92df73bf96d9"/*EaseTime*/,
       "Position": {
-        "X": 177.7005,
-        "Y": 184.87027
+        "X": 254.87646,
+        "Y": 171.84442
       }
     }
   ],
@@ -35,71 +35,65 @@
     {
       "ChildId": "15e2516b-b8fe-4d17-96b8-59d0d936bfe1"/*Vector4*/,
       "Position": {
-        "X": 457.7005,
-        "Y": 114.87027
+        "X": 674.87646,
+        "Y": 101.84442
       }
     },
     {
-      "ChildId": "1e441b24-23c1-490e-a77b-aa9e50dcd72a"/*Compare*/,
+      "ChildId": "2b805478-4d67-411a-a05e-2b01c31a2489"/*TriggerAnim*/,
       "Position": {
-        "X": 470.8291,
-        "Y": 330.9702
+        "X": 394.87646,
+        "Y": 136.84442
       }
     },
     {
-      "ChildId": "2623af92-5a33-43c1-8570-02159cf40852"/*BoolToInt*/,
+      "ChildId": "417f2c26-16d2-43ce-b0ee-a9b890b6793a"/*Compare*/,
       "Position": {
-        "X": 610.8291,
-        "Y": 365.9702
+        "X": 534.87646,
+        "Y": 348.9512
       }
     },
     {
-      "ChildId": "3b6d86eb-033f-4a4a-8d3a-c5eb095ce56f"/*BoolToInt*/,
+      "ChildId": "4f18208e-3ad1-4f81-9074-2309b6633ec4"/*PickTexture*/,
+      "Comment": "In place to only have the current Deck image active when it's not crossfading, so we get a bit more headroom",
       "Position": {
-        "X": 610.8291,
-        "Y": 330.9702
-      }
-    },
-    {
-      "ChildId": "82527048-42ce-4d8a-b890-2f907dd2d3fb"/*Compare*/,
-      "Position": {
-        "X": 470.8291,
-        "Y": 365.9702
+        "X": 954.87646,
+        "Y": -3.1555786
       }
     },
     {
       "ChildId": "b1e83768-7d0b-48a0-a7e5-292e99f6d6eb"/*Blend*/,
       "Position": {
-        "X": 597.7005,
-        "Y": 44.87027
+        "X": 814.87646,
+        "Y": 31.844421
       }
     },
     {
-      "ChildId": "c4e18620-c4bf-4b62-a39c-ea1d7d7c9a81"/*BoolToFloat*/,
+      "ChildId": "cc8f22bf-c1b3-45a5-bdcc-7aeab30353e0"/*Modulo*/,
       "Position": {
-        "X": 177.7005,
-        "Y": 149.87027
+        "X": 534.87646,
+        "Y": 136.84442
       }
     },
     {
-      "ChildId": "cf242593-0d90-487a-bd0c-8feac2c215bc"/*AddInts*/,
+      "ChildId": "e0838a86-c0bb-442d-a9c3-50ddf561df5e"/*BoolToInt*/,
       "Position": {
-        "X": 750.8291,
-        "Y": 330.9702
+        "X": 674.87646,
+        "Y": 348.9512
       }
     },
     {
-      "ChildId": "cfe793f6-d96d-4725-a5ce-2743d747803c"/*Ease*/,
+      "ChildId": "e1f0c25b-4326-4b9e-93d4-31133ebfe0f6"/*CountInt*/,
       "Position": {
-        "X": 317.7005,
-        "Y": 149.87027
+        "X": 534.87646,
+        "Y": 206.84442
       }
     },
     {
-      "ChildId": "fe66cbb2-3276-438b-8a01-b5032fcfac1e"/*PickTexture*/,
+      "ChildId": "fc2e3d53-b55d-4b67-ad82-b5480331fbfd"/*HelperDeckCounter*/,
       "Position": {
-        "X": 1009.6699,
-        "Y": 0.0
+        "X": 591.69556,
+        "Y": -3.492279
       }
     }
   ],
@@ -107,8 +101,15 @@
     {
       "OutputId": "8cfa8c3c-1018-46e4-87cd-aec18d254339"/*Output*/,
       "Position": {
-        "X": 1149.6699,
-        "Y": 0.0
+        "X": 1234.8767,
+        "Y": -38.15558
+      }
+    },
+    {
+      "OutputId": "16b17ea9-b54d-4122-973c-bb9957753a0a"/*CrossfadeCounter*/,
+      "Position": {
+        "X": 674.87646,
+        "Y": 206.84442
       }
     }
   ]

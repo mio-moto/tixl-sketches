@@ -1,0 +1,215 @@
+{
+  "FormatVersion": 2,
+  "TixlVersion": "4.2.0.2",
+  "Id": "a009fefb-fef2-4e7a-8ed1-706e83a10df3"/*BeatValue*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "0678ef73-55f8-4f9d-ba44-27e03501b208"/*BarCurve*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": -96.92111
+      },
+      "GroupTitle": "1x",
+      "Min": 0.0,
+      "Max": 1.0,
+      "UseVec2Control": "BiasAndGain"
+    },
+    {
+      "InputId": "2fdb1687-a5aa-4903-9caa-ac51f258533e"/*DoubleTabCurve*/,
+      "Position": {
+        "X": -491.71442,
+        "Y": 279.09366
+      },
+      "GroupTitle": "16x",
+      "Min": 0.0,
+      "Max": 1.0,
+      "UseVec2Control": "BiasAndGain"
+    },
+    {
+      "InputId": "7f56a7a8-2bb5-4077-abe1-c076691acd37"/*TapCurve*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": 154.03217
+      },
+      "GroupTitle": "8x",
+      "Min": 0.0,
+      "Max": 1.0,
+      "UseVec2Control": "BiasAndGain"
+    },
+    {
+      "InputId": "8736339d-480a-49f4-aa51-fd06c52c876e"/*BeatCurve*/,
+      "Position": {
+        "X": -491.71448,
+        "Y": -224.70978
+      },
+      "GroupTitle": "4x",
+      "Min": 0.0,
+      "Max": 1.0,
+      "UseVec2Control": "BiasAndGain"
+    },
+    {
+      "InputId": "ba44c9dc-c161-4672-8707-687cae599317"/*HalfBarCurve*/,
+      "Position": {
+        "X": -491.71442,
+        "Y": 31.579468
+      },
+      "GroupTitle": "2x",
+      "Min": 0.0,
+      "Max": 1.0,
+      "UseVec2Control": "BiasAndGain"
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "24b0263c-2531-4617-83e9-841a520a4c0e"/*Modulo*/,
+      "Position": {
+        "X": -491.71448,
+        "Y": -259.70978
+      }
+    },
+    {
+      "ChildId": "5895ed14-8792-4b09-b96d-164799288f89"/*Time*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": -166.92111
+      }
+    },
+    {
+      "ChildId": "58abbc09-e97f-48c2-bd70-7135f79bae33"/*Remap*/,
+      "Position": {
+        "X": -351.71442,
+        "Y": -3.4205322
+      }
+    },
+    {
+      "ChildId": "5ccba1b9-c41b-40ad-8cf4-016cc7edda41"/*Modulo*/,
+      "Position": {
+        "X": -491.71457,
+        "Y": 119.032166
+      }
+    },
+    {
+      "ChildId": "69f8a22b-53b2-4b3d-9d82-537d9791a0a9"/*Remap*/,
+      "Position": {
+        "X": -351.71442,
+        "Y": 244.09366
+      }
+    },
+    {
+      "ChildId": "89f9456e-1786-4390-a456-1fa2d63810ed"/*Time*/,
+      "Position": {
+        "X": -491.71448,
+        "Y": -294.70978
+      }
+    },
+    {
+      "ChildId": "8d96b0cc-d97b-4567-a0a5-08ee5a9dd478"/*Modulo*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": -3.4205322
+      }
+    },
+    {
+      "ChildId": "b841f2c5-0195-475d-b7ec-1dc27e686d41"/*Remap*/,
+      "Position": {
+        "X": -351.71445,
+        "Y": 119.032166
+      }
+    },
+    {
+      "ChildId": "c533c0a2-fd5e-4542-ad28-802edf3a7433"/*Time*/,
+      "Position": {
+        "X": -491.71454,
+        "Y": 209.09366
+      }
+    },
+    {
+      "ChildId": "e05c9027-75d0-46c7-8d2e-aa6b4f48cb7c"/*Time*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": -38.420532
+      }
+    },
+    {
+      "ChildId": "e8c16ae5-8d1d-47b4-98a4-750e62a0eaf3"/*Modulo*/,
+      "Position": {
+        "X": -491.71454,
+        "Y": 244.09366
+      }
+    },
+    {
+      "ChildId": "e8cb1feb-f13b-4a3e-bd8f-6bfe2143a762"/*Time*/,
+      "Position": {
+        "X": -491.71457,
+        "Y": 84.032166
+      }
+    },
+    {
+      "ChildId": "fcba7af4-e850-47ba-a8ee-eec4cfcfdd83"/*Remap*/,
+      "Position": {
+        "X": -351.71445,
+        "Y": -131.92111
+      }
+    },
+    {
+      "ChildId": "fd08cc44-e7f7-42c4-aa9a-43fd37cfba02"/*Modulo*/,
+      "Position": {
+        "X": -491.71445,
+        "Y": -131.92111
+      }
+    },
+    {
+      "ChildId": "ff89ea94-613c-4a99-97fb-70b493ef2170"/*Remap*/,
+      "Position": {
+        "X": -351.71448,
+        "Y": -259.70978
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "94c33621-2616-4d01-b05d-ae7e32fb4738"/*Beat*/,
+      "Position": {
+        "X": -211.71448,
+        "Y": -259.70978
+      }
+    },
+    {
+      "OutputId": "6f38a3b6-2e06-4c47-8ebc-6d4138c1610a"/*Bar*/,
+      "Position": {
+        "X": -211.71445,
+        "Y": -131.92111
+      }
+    },
+    {
+      "OutputId": "e4035bb9-8a07-4237-b5af-4696a31d60cf"/*HalfBar*/,
+      "Position": {
+        "X": -211.71442,
+        "Y": -3.4205322
+      }
+    },
+    {
+      "OutputId": "80ed9180-3a38-41fd-9e8f-022226f36e45"/*Tap*/,
+      "Position": {
+        "X": -211.71445,
+        "Y": 119.032166
+      }
+    },
+    {
+      "OutputId": "73743be0-e338-450c-870a-118a221e0f56"/*DoubleTap*/,
+      "Position": {
+        "X": -211.71442,
+        "Y": 244.09366
+      }
+    }
+  ],
+  "Settings": {
+    "Timeline": {
+  "ScaleX": 80.0,
+  "ScrollX": -2.5,
+  "Mode": "DopeView",
+  "TimelineHeight": -1
+}
+  }
+}

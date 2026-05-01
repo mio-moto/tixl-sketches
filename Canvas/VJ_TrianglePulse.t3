@@ -1,4 +1,6 @@
 {
+  "FormatVersion": 2,
+  "TixlVersion": "4.2.0.2",
   "Id": "45b7b3f1-cff1-41b0-9450-7d79dfd8c3d6"/*VJ_TrianglePulse*/,
   "Inputs": [
     {

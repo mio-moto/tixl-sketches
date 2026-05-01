@@ -33,6 +33,13 @@
       }
     },
     {
+      "ChildId": "0dd38ad6-8aa0-4ff4-9dd3-db4713143505"/*BeatTimer*/,
+      "Position": {
+        "X": 2090.3494,
+        "Y": 1259.5122
+      }
+    },
+    {
       "ChildId": "1118c527-d857-4ebe-a9db-437c00f14359"/*Value*/,
       "Position": {
         "X": 459.1208,
@@ -72,6 +79,13 @@
       "Position": {
         "X": 921.07336,
         "Y": 81.05286
+      }
+    },
+    {
+      "ChildId": "2321b0b4-a410-4039-8ac2-f7a31be90132"/*MirrorRepeat*/,
+      "Position": {
+        "X": 2370.3494,
+        "Y": 1294.5122
       }
     },
     {
@@ -177,6 +191,13 @@
       "Position": {
         "X": 1061.0737,
         "Y": 46.053833
+      }
+    },
+    {
+      "ChildId": "665145f5-9301-4913-84cb-c6e0cbb9607f"/*Multiply*/,
+      "Position": {
+        "X": 2230.3494,
+        "Y": 1329.5122
       }
     },
     {
@@ -467,6 +488,13 @@
       }
     },
     {
+      "ChildId": "f9161b3e-b8bb-472e-b4a4-a077c7f625ef"/*Add*/,
+      "Position": {
+        "X": 2230.3494,
+        "Y": 1259.5122
+      }
+    },
+    {
       "ChildId": "fa362e91-0621-4430-a706-ba1280f0c578"/*RemapColor*/,
       "Position": {
         "X": 2370.3494,
@@ -508,6 +536,13 @@
       "Position": {
         "X": 2405.5735,
         "Y": 638.7092
+      }
+    },
+    {
+      "OutputId": "edaec665-ad15-46ce-be50-14d12ec8cc29"/*RotatingMirrorOilImage*/,
+      "Position": {
+        "X": 2510.3494,
+        "Y": 1294.5122
       }
     }
   ]
