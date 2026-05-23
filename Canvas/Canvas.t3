@@ -156,12 +156,6 @@
       "Outputs": []
     },
     {
-      "Id": "0442db30-f370-457e-9c87-051ab22c9ad5"/*M8Client*/,
-      "SymbolId": "2b1fa469-358f-4286-b498-807af7a7b096",
-      "InputValues": [],
-      "Outputs": []
-    },
-    {
       "Id": "044eb499-3d88-4f06-926e-594d067db0c4"/*PixelShader*/,
       "SymbolId": "f7c625da-fede-4993-976c-e259e0ee4985",
       "InputValues": [
@@ -906,12 +900,6 @@
       "Outputs": []
     },
     {
-      "Id": "1262f423-0c28-4306-8d4f-0a34ec2d0a44"/*Blend*/,
-      "SymbolId": "9f43f769-d32a-4f49-92ac-e0be3ba250cf",
-      "InputValues": [],
-      "Outputs": []
-    },
-    {
       "Id": "127b469f-c975-42bd-946c-4b44ce1ca8c2"/*PixelShader*/,
       "SymbolId": "f7c625da-fede-4993-976c-e259e0ee4985",
       "InputValues": [
@@ -1649,33 +1637,6 @@
           "Id": "da0941c9-c700-4552-9d8a-799bf7a08826"/*Rotate*/,
           "Type": "System.Single",
           "Value": 0.0
-        }
-      ],
-      "Outputs": []
-    },
-    {
-      "Id": "20510563-2c50-41b7-8003-4eab549bf927"/*SerialInput*/,
-      "SymbolId": "f5aabc51-b275-4344-a244-934f4e4f7d3a",
-      "InputValues": [
-        {
-          "Id": "235c441e-9214-4e3f-84e3-441f8c43098c"/*Connect*/,
-          "Type": "System.Boolean",
-          "Value": true
-        },
-        {
-          "Id": "4b83b1b5-391b-4a8e-8734-706b1b85169f"/*ListLength*/,
-          "Type": "System.Int32",
-          "Value": 1000
-        },
-        {
-          "Id": "8051e8e3-4050-4284-a6a4-2e11c4731804"/*BaudRate*/,
-          "Type": "System.Int32",
-          "Value": 115200
-        },
-        {
-          "Id": "d21e4e71-6731-4a2d-b32e-30810d3c185a"/*PortName*/,
-          "Type": "System.String",
-          "Value": "COM10"
         }
       ],
       "Outputs": []
@@ -2849,12 +2810,6 @@
           "Value": 1.0
         }
       ],
-      "Outputs": []
-    },
-    {
-      "Id": "379726e7-f61d-4382-944a-466550abf887"/*Text*/,
-      "SymbolId": "fd31d208-12fe-46bf-bfa3-101211f8f497",
-      "InputValues": [],
       "Outputs": []
     },
     {
@@ -8383,7 +8338,7 @@
         {
           "Id": "24646f06-1509-43ce-94c6-eeb608ad97cd"/*Source*/,
           "Type": "System.String",
-          "Value": "Mio.General.Canvas:Shaders/PulseStar.hlsl"
+          "Value": "Mio.General.Canvas:Shaders/Externals/PulseStar.hlsl"
         },
         {
           "Id": "501338b3-f432-49a5-bdbd-bcf209671305"/*EntryPoint*/,
@@ -12487,7 +12442,7 @@
         {
           "Id": "24646f06-1509-43ce-94c6-eeb608ad97cd"/*Source*/,
           "Type": "System.String",
-          "Value": "Mio.General.Canvas:Shaders/QuasiCrystal.hlsl"
+          "Value": "Mio.General.Canvas:Shaders/Externals2/QuasiCrystal.hlsl"
         },
         {
           "Id": "501338b3-f432-49a5-bdbd-bcf209671305"/*EntryPoint*/,
@@ -15254,12 +15209,6 @@
       "TargetSlotId": "afcba3d4-b7db-40bd-919a-d4f49b1bf7fc"
     },
     {
-      "SourceParentOrChildId": "20510563-2c50-41b7-8003-4eab549bf927",
-      "SourceSlotId": "0e25fe8e-6c14-4e6e-824e-910b8d9e3d8e",
-      "TargetParentOrChildId": "0442db30-f370-457e-9c87-051ab22c9ad5",
-      "TargetSlotId": "f6dc6d6a-c5a5-46a6-97fc-43e851e3e097"
-    },
-    {
       "SourceParentOrChildId": "f68f1095-505c-48bf-9b50-15d1f8760b89",
       "SourceSlotId": "f83f1835-477e-4bb6-93f0-14bf273b8e94",
       "TargetParentOrChildId": "04655205-f44f-4553-a75f-ad49e46c5461",
@@ -16392,12 +16341,6 @@
       "SourceSlotId": "f83f1835-477e-4bb6-93f0-14bf273b8e94",
       "TargetParentOrChildId": "373b64a2-0e58-421c-b359-2e77a7a2ede7",
       "TargetSlotId": "c2107af4-7b4f-43ef-97fe-934833790032"
-    },
-    {
-      "SourceParentOrChildId": "0442db30-f370-457e-9c87-051ab22c9ad5",
-      "SourceSlotId": "646708a8-da18-4971-b7b8-caedbb77305b",
-      "TargetParentOrChildId": "379726e7-f61d-4382-944a-466550abf887",
-      "TargetSlotId": "f1f1be0e-d5bc-4940-bbc1-88bfa958f0e1"
     },
     {
       "SourceParentOrChildId": "43fbaa64-4982-4755-a21d-db41775c313d",
@@ -21592,7 +21535,7 @@
   ],
   "PlaybackSettings": {
     "Enabled": true,
-    "Bpm": 83.15546,
+    "Bpm": 60.0,
     "AudioSource": 1,
     "Syncing": 1,
     "AudioDecayFactor": 0.9,
