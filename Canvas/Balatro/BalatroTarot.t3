@@ -1,0 +1,105 @@
+{
+  "Id": "965450b7-dfbb-4308-a30d-9ca29711e5c5"/*BalatroTarot*/,
+  "Inputs": [
+    {
+      "Id": "fcfa006f-350b-4472-8405-1d4eb2272c58"/*Index*/,
+      "DefaultValue": 0
+    }
+  ],
+  "Children": [
+    {
+      "Id": "5471e05d-4a80-47a9-815b-fd5269b0dc27"/*AtlasSelector*/,
+      "SymbolId": "0440414e-1a30-4c84-8b8b-cebce01335f1",
+      "InputValues": [
+        {
+          "Id": "00fe3d18-5f3a-4b41-863c-cd8a4d7ebb69"/*AtlasSize*/,
+          "Type": "T3.Core.DataTypes.Vector.Int2",
+          "Value": {
+            "X": 10,
+            "Y": 6
+          }
+        },
+        {
+          "Id": "72b59651-c39a-41b9-bba4-16714fe72d2c"/*Index*/,
+          "Type": "System.Int32",
+          "Value": 80
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "8e177e97-1d61-4669-ab22-821b8e4b991b"/*LoadImage*/,
+      "SymbolId": "0b3436db-e283-436e-ba85-2f3a1de76a9d",
+      "InputValues": [
+        {
+          "Id": "76cc3811-4ae0-48b2-a119-890db5a4eeb2"/*Path*/,
+          "Type": "System.String",
+          "Value": "Mio.General.Canvas:Tarots.png"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "a533cfc4-63d6-4949-b88c-7be06bddef03"/*ModInt*/,
+      "SymbolId": "cf3268d7-4f3d-47bd-8cb5-0214c75432ec",
+      "InputValues": [
+        {
+          "Id": "ccdea113-c046-4ec2-b1fb-30d6e15db7ce"/*Mod*/,
+          "Type": "System.Int32",
+          "Value": 23
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "f7513145-cddb-46dd-82a4-8037c8fef268"/*Crop*/,
+      "SymbolId": "a29cf1c8-d9cd-4a5d-b06c-597cbeb5b33d",
+      "InputValues": [],
+      "Outputs": []
+    }
+  ],
+  "Connections": [
+    {
+      "SourceParentOrChildId": "f7513145-cddb-46dd-82a4-8037c8fef268",
+      "SourceSlotId": "0f7a4421-97d7-48d0-8a99-a7cc84356be2",
+      "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "TargetSlotId": "4b8e547d-d020-4b8f-87e2-23d6326a4d20"
+    },
+    {
+      "SourceParentOrChildId": "a533cfc4-63d6-4949-b88c-7be06bddef03",
+      "SourceSlotId": "8fed46e4-b9df-4d56-b098-9c9a17775139",
+      "TargetParentOrChildId": "5471e05d-4a80-47a9-815b-fd5269b0dc27",
+      "TargetSlotId": "72b59651-c39a-41b9-bba4-16714fe72d2c"
+    },
+    {
+      "SourceParentOrChildId": "8e177e97-1d61-4669-ab22-821b8e4b991b",
+      "SourceSlotId": "e0c4fedd-5c2f-46c8-b67d-5667435fb037",
+      "TargetParentOrChildId": "5471e05d-4a80-47a9-815b-fd5269b0dc27",
+      "TargetSlotId": "c4b01474-4662-479f-84f1-4a5fbd8b7206"
+    },
+    {
+      "SourceParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "SourceSlotId": "fcfa006f-350b-4472-8405-1d4eb2272c58",
+      "TargetParentOrChildId": "a533cfc4-63d6-4949-b88c-7be06bddef03",
+      "TargetSlotId": "3528f4d3-3529-4551-9dc1-e1dafe6b0669"
+    },
+    {
+      "SourceParentOrChildId": "8e177e97-1d61-4669-ab22-821b8e4b991b",
+      "SourceSlotId": "e0c4fedd-5c2f-46c8-b67d-5667435fb037",
+      "TargetParentOrChildId": "f7513145-cddb-46dd-82a4-8037c8fef268",
+      "TargetSlotId": "a7fff052-42c2-40fb-938e-9fb9b6cfa591"
+    },
+    {
+      "SourceParentOrChildId": "5471e05d-4a80-47a9-815b-fd5269b0dc27",
+      "SourceSlotId": "ac0d49d4-02cf-4356-8fed-9c1c97c58a89",
+      "TargetParentOrChildId": "f7513145-cddb-46dd-82a4-8037c8fef268",
+      "TargetSlotId": "db4c2d41-c369-4182-83fd-cb04aa04ec76"
+    },
+    {
+      "SourceParentOrChildId": "5471e05d-4a80-47a9-815b-fd5269b0dc27",
+      "SourceSlotId": "3285eb23-0369-4e53-9a88-d28291bce3cf",
+      "TargetParentOrChildId": "f7513145-cddb-46dd-82a4-8037c8fef268",
+      "TargetSlotId": "eff02108-2335-46b5-95ba-4235b9a26349"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "Id": "f91ac01d-ab37-48bf-af75-5327f260aeb3"/*FlexibleCustomPixelShader*/,
+  "Description": "Creates a custom shader from a source parameter. This can be useful for prototyping.\n\nUse \"Ignore Template\" to bring in your entire shader.\n",
+  "InputUis": [
+    {
+      "InputId": "06067ade-09e4-4814-9e42-b1c1313e4029"/*PixelShader*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 325.8828
+      }
+    },
+    {
+      "InputId": "46e857d6-efc0-490e-b384-0677ddf1e720"/*Clear*/,
+      "Position": {
+        "X": 1917.3501,
+        "Y": 745.8828
+      },
+      "Description": "Clearing RenderTarget\nsetting it to false also enables blending mode, so that result is blended on top of backbuffer"
+    },
+    {
+      "InputId": "510014f1-4bea-44e3-bb03-adf0f2fefc9e"/*OverrideTime*/,
+      "Position": {
+        "X": 1788.8567,
+        "Y": 499.2328
+      }
+    },
+    {
+      "InputId": "5b5d06a3-a4cf-47e4-831b-3ec7b979351c"/*CustomSampler*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 605.8828
+      },
+      "Description": "Use SamplerState node to add custom sampler(s); first sampler input is defined in template as CustomSampler.\nsamplers coming after that will need to be defined in AdditionalCode, for example:\n\nsampler Sampler2 : register(s2);"
+    },
+    {
+      "InputId": "6b6b85f0-c51c-4a59-a9d7-011fc9186028"/*TextureFormat*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 920.8829
+      }
+    },
+    {
+      "InputId": "ab08c854-5382-477f-b2ee-70b962d01941"/*GenerateMips*/,
+      "Position": {
+        "X": 2477.35,
+        "Y": 955.8828
+      }
+    },
+    {
+      "InputId": "c4465520-0746-4819-9a16-65a9c54d27c0"/*ConstantBuffers*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 430.8828
+      },
+      "Description": "Use FloatsToBuffer or Ints to buffer to pass additional input params, define in AdditionalCode for example:\n\ncbuffer AdditionalIntParams : register(b2)\n{\n    int Index;\n}\ncbuffer AdditionalFloatParams : register(b3)\n{\n    float4 Color;\n}"
+    },
+    {
+      "InputId": "d541657f-e18b-49d0-8d88-04a26df4cefe"/*ShaderResources*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 500.8828
+      },
+      "Description": "Use SrvFromTexutre2d for additional texture inputs. They will need to be defined in AdditionalCode, for example:\n\nTexture2D<float4> Image3 : register(t2);"
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "0506187f-99ae-48ed-9394-f75802fecc3f"/*RenderTargetBlendDescription*/,
+      "Position": {
+        "X": 2337.35,
+        "Y": 745.8828
+      }
+    },
+    {
+      "ChildId": "060004da-9b0e-4aea-91c4-efac750213e0"/*BlendEnabled*/,
+      "Position": {
+        "X": 2197.35,
+        "Y": 745.8828
+      }
+    },
+    {
+      "ChildId": "0c289590-1554-4154-a0ca-1924fb594ec6"/*Compare*/,
+      "Position": {
+        "X": 1788.8567,
+        "Y": 534.2328
+      }
+    },
+    {
+      "ChildId": "130ac50a-32e6-4f3e-a8e7-38ae0e4f436c"/*PickFloat*/,
+      "Position": {
+        "X": 1928.8567,
+        "Y": 464.23288
+      }
+    },
+    {
+      "ChildId": "13d007dd-873f-4fd3-8846-8eb8f5908e88"/*Rasterizer*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 710.8828
+      }
+    },
+    {
+      "ChildId": "1540a278-c60c-47ec-92d5-1e5759ac1971"/*VertexShader*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 290.8828
+      }
+    },
+    {
+      "ChildId": "1b9c0fa3-0eee-472b-ba48-8cdaead57517"/*GenerateMips*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 955.8828
+      }
+    },
+    {
+      "ChildId": "1ede58fd-e121-48f4-a70f-9228042e3f0e"/*OutputMergerStage*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 745.8828
+      }
+    },
+    {
+      "ChildId": "3856dd84-cbb1-4b6b-827c-3c0a46ee1e22"/*InputAssemblerStage*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 675.8828
+      }
+    },
+    {
+      "ChildId": "53ae27cd-1f69-4d23-be01-483a653a8951"/*RasterizerState*/,
+      "Position": {
+        "X": 2477.35,
+        "Y": 710.8828
+      }
+    },
+    {
+      "ChildId": "53aea817-2fcf-46f2-85e7-511be47a0473"/*Time*/,
+      "Position": {
+        "X": 1788.8567,
+        "Y": 464.23288
+      }
+    },
+    {
+      "ChildId": "5c320ee9-1e8b-4caf-846a-eee89644d7ce"/*Not*/,
+      "Position": {
+        "X": 2057.35,
+        "Y": 745.8828
+      }
+    },
+    {
+      "ChildId": "6411e290-3253-48a8-97c7-f1c826581e3d"/*BlendState*/,
+      "Position": {
+        "X": 2477.35,
+        "Y": 745.8828
+      }
+    },
+    {
+      "ChildId": "a59ae501-b798-4e1e-bbff-0bd7026ae91e"/*Draw*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 780.8828
+      }
+    },
+    {
+      "ChildId": "a7d3d52b-6c26-49ea-8d57-558ec489d3b7"/*SamplerState*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 535.8828
+      }
+    },
+    {
+      "ChildId": "a80ae4d6-d24c-4b66-a798-2d71f070b988"/*Int2Components*/,
+      "Position": {
+        "X": 1768.0928,
+        "Y": 349.9336
+      }
+    },
+    {
+      "ChildId": "a8b8d3b6-e02a-47af-ac44-46518d0aa429"/*RenderTarget*/,
+      "Position": {
+        "X": 2757.35,
+        "Y": 815.8828
+      }
+    },
+    {
+      "ChildId": "b513e742-488c-4098-87b5-4742ae0b3f02"/*RequestedResolution*/,
+      "Position": {
+        "X": 1340.4148,
+        "Y": 851.9648
+      }
+    },
+    {
+      "ChildId": "b8f0a732-4351-4435-91da-b4841998a850"/*IntsToBuffer*/,
+      "Position": {
+        "X": 1908.0925,
+        "Y": 349.9336
+      }
+    },
+    {
+      "ChildId": "b920da3c-745e-4488-9e35-6832599ef1c4"/*SetPixelAndVertexShaderStage*/,
+      "Position": {
+        "X": 2757.35,
+        "Y": 290.8828
+      }
+    },
+    {
+      "ChildId": "cc47a5bf-ba85-4a8c-8883-e441e9f72098"/*UseTextureReference*/,
+      "Position": {
+        "X": 2477.35,
+        "Y": 430.8828
+      }
+    },
+    {
+      "ChildId": "d988f9ee-0d49-48c8-888a-4ff5d4ecd6a8"/*BoolToInt*/,
+      "Position": {
+        "X": 1788.8567,
+        "Y": 569.2328
+      }
+    },
+    {
+      "ChildId": "dcbf7cba-e823-4dde-85c5-21d30f38701d"/*ClampedSampler*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 570.8828
+      }
+    },
+    {
+      "ChildId": "e850848d-c990-47c1-9975-abe4fad5d416"/*FloatsToBuffer*/,
+      "Position": {
+        "X": 2068.8567,
+        "Y": 429.23288
+      }
+    },
+    {
+      "ChildId": "e961fb01-cb4d-4d85-8420-b547f0da1033"/*Execute*/,
+      "Style": "Resizable",
+      "Size": {
+        "X": 140.0,
+        "Y": 175.0
+      },
+      "Position": {
+        "X": 2757.35,
+        "Y": 640.8828
+      }
+    },
+    {
+      "ChildId": "f82cf332-fd02-48bf-acdf-db504beebe85"/*Clear*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 885.8829
+      }
+    },
+    {
+      "ChildId": "f8ee61a2-59c2-4e67-904f-8aeaa7628e3b"/*SrvFromTexture2d*/,
+      "Position": {
+        "X": 2617.35,
+        "Y": 465.8828
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "7707586f-58d7-4d56-87eb-25e5b27fcf55"/*TextureOutput*/,
+      "Position": {
+        "X": 2757.35,
+        "Y": 990.88257
+      }
+    },
+    {
+      "OutputId": "d9219c67-de11-47df-adde-e5c02e1db0c7"/*Command*/,
+      "Position": {
+        "X": 2897.35,
+        "Y": 640.8828
+      }
+    },
+    {
+      "OutputId": "610709ac-c01a-464a-9352-85da6d280361"/*Reference*/,
+      "Position": {
+        "X": 2477.35,
+        "Y": 500.8828
+      }
+    }
+  ]
+}

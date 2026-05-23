@@ -1,0 +1,22 @@
+{
+  "Id": "0440414e-1a30-4c84-8b8b-cebce01335f1"/*AtlasSelector*/,
+  "Inputs": [
+    {
+      "Id": "00fe3d18-5f3a-4b41-863c-cd8a4d7ebb69"/*AtlasSize*/,
+      "DefaultValue": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    {
+      "Id": "72b59651-c39a-41b9-bba4-16714fe72d2c"/*Index*/,
+      "DefaultValue": 0
+    },
+    {
+      "Id": "c4b01474-4662-479f-84f1-4a5fbd8b7206"/*Atlas*/,
+      "DefaultValue": null
+    }
+  ],
+  "Children": [],
+  "Connections": []
+}

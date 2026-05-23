@@ -1,0 +1,45 @@
+{
+  "Id": "0440414e-1a30-4c84-8b8b-cebce01335f1"/*AtlasSelector*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "00fe3d18-5f3a-4b41-863c-cd8a4d7ebb69"/*AtlasSize*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 75.0
+      }
+    },
+    {
+      "InputId": "72b59651-c39a-41b9-bba4-16714fe72d2c"/*Index*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 150.0
+      },
+      "Min": 0
+    },
+    {
+      "InputId": "c4b01474-4662-479f-84f1-4a5fbd8b7206"/*Atlas*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "SymbolChildUis": [],
+  "OutputUis": [
+    {
+      "OutputId": "3285eb23-0369-4e53-9a88-d28291bce3cf"/*LeftRight*/,
+      "Position": {
+        "X": 300.0,
+        "Y": 200.0
+      }
+    },
+    {
+      "OutputId": "ac0d49d4-02cf-4356-8fed-9c1c97c58a89"/*TopBottom*/,
+      "Position": {
+        "X": 300.0,
+        "Y": 300.0
+      }
+    }
+  ]
+}

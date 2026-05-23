@@ -1,0 +1,59 @@
+{
+  "Id": "e2b9bfa9-34a7-4da4-ab8c-0b1b5e03effc"/*RenderCard*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "3b66d342-37a7-43d9-acc4-64b1dc2e75b8"/*Front*/,
+      "Position": {
+        "X": -288.52493,
+        "Y": -288.4201
+      }
+    },
+    {
+      "InputId": "fcc9f8d2-eb85-43dc-9633-6be87686cb4e"/*Back*/,
+      "Position": {
+        "X": -708.52515,
+        "Y": -183.4201
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "31b246aa-dc09-4e1b-9d03-40b11d78d934"/*Transform*/,
+      "Position": {
+        "X": -428.52493,
+        "Y": -183.4201
+      }
+    },
+    {
+      "ChildId": "5dabba63-71a3-42b6-a9a2-4b1825ed4507"/*Layer2d*/,
+      "Position": {
+        "X": -288.52493,
+        "Y": -253.4201
+      }
+    },
+    {
+      "ChildId": "6940933e-6943-4639-aaac-fef1d6b7565f"/*Layer2d*/,
+      "Position": {
+        "X": -568.525,
+        "Y": -183.4201
+      }
+    },
+    {
+      "ChildId": "8bd8dd25-f304-4666-957d-7b82378f9069"/*Execute*/,
+      "Position": {
+        "X": -288.52493,
+        "Y": -218.4201
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "104aa409-7535-4bc3-8753-77954b8ec6f4"/*Command*/,
+      "Position": {
+        "X": -288.52493,
+        "Y": -148.4201
+      }
+    }
+  ]
+}

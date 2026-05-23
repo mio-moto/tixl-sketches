@@ -1,4 +1,7 @@
-﻿// #define PI 3.14159265359
+﻿
+
+
+// #define PI 3.14159265359
 // #define NoiseImpact A
 #define Sampling Center.xy
 #define SampleOffset float2(A, B)

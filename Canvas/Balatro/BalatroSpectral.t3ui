@@ -1,0 +1,59 @@
+{
+  "Id": "d2695f3b-d674-4485-9560-e8c0d1414a9d"/*BalatroSpectral*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "29ca8cfd-5771-4cf8-94a8-9cf8d4f3321a"/*Index*/,
+      "Position": {
+        "X": -140.0,
+        "Y": 35.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "0bc7a380-8962-45d2-955a-ccf6eee223d4"/*AtlasSelector*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "2dfb8dc0-0d0c-45b1-88e1-2c8b35a1bb5a"/*ModInt*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66"/*Crop*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "883d224e-3dd5-4561-b615-47d9d144bc61"/*AddInts*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "e77f06d4-5a20-4055-aeb8-a5c7c5afb726"/*LoadImage*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "dd8bad5a-ddb3-4bfa-b12c-c9cef423b7a2"/*Output*/,
+      "Position": {
+        "X": 690.0,
+        "Y": 47.5
+      }
+    }
+  ]
+}

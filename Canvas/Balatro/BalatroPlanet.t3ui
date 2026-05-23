@@ -1,0 +1,59 @@
+{
+  "Id": "e23a53b7-7374-41e4-aa30-a18e0f9d4316"/*BalatroPlanet*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "562b5e04-f2ee-4ea1-ae1a-6755642f82e7"/*Index*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 105.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "8b14a53c-be23-45cc-9ce2-98ee097086bb"/*AtlasSelector*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "a0049876-3983-4c3e-a607-654507923942"/*PickIntFromList*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "cfeb41ae-9b60-4823-95c6-32299b6bc8b1"/*LoadImage*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "d8f85988-8544-4636-8351-cf1f0e766ae4"/*Crop*/,
+      "Position": {
+        "X": 420.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "feeaddeb-872a-490e-be19-288f8fc5b68a"/*IntList*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 70.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "8c2a1ba6-8ffd-4d61-bcc9-91c6e6f79ffb"/*Card*/,
+      "Position": {
+        "X": 560.0,
+        "Y": 0.0
+      }
+    }
+  ]
+}

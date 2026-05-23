@@ -1,0 +1,46 @@
+{
+  "Id": "c4dccf4a-a164-4b4b-be41-5bc300d60950"/*BalatroJoker*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "7f52fe74-5110-49bb-a2d0-616c1c806aef"/*JokerIndex*/,
+      "Position": {
+        "X": -140.0,
+        "Y": 70.0
+      },
+      "Min": 0
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "71d70e27-429e-4134-80f8-b18026519cd9"/*LoadImage*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "8e4ef27d-1fba-41a0-b22c-cd5f12c915e7"/*AtlasSelector*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "8f53e221-e22e-47f0-ada8-eed46a5b94ee"/*Crop*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "95ce2635-a13e-4a5f-83e4-83f66f1915b5"/*Card*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 0.0
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
-    <VersionPrefix>1.228.53</VersionPrefix>
+    <VersionPrefix>1.311.69</VersionPrefix>
     <Nullable>enable</Nullable>
     <EditorVersion>4.1.1</EditorVersion>
     <IsEditorOnly>false</IsEditorOnly>
@@ -204,7 +204,14 @@
       <Link>Assets/%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
-  <ItemGroup Label="OperatorPackages" />
+  <ItemGroup Label="OperatorPackages">
+    <PackageReference Include="NAudio.Midi" Version="2.2.1" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assets\Shaders\Quasar_1.hlsl" />
+  </ItemGroup>
   <Target Name="ClearBuildOutput" BeforeTargets="BeforeBuild">
     <RemoveDir Directories="bin/$(Configuration)" />
   </Target>

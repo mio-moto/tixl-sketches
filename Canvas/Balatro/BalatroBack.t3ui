@@ -1,0 +1,59 @@
+{
+  "Id": "620aa2e9-a249-4472-8dc8-0d41dba87710"/*BalatroBack*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "48b794e5-2a4f-4ca8-9d60-a51bd0c5d58e"/*Index*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 105.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "78cc53f7-a8d0-4abe-820d-5cf6625c072b"/*IntList*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "8bb8e7ab-5908-4b9b-9fa7-a576fa07ea2b"/*AtlasSelector*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "9fb4d993-cafe-47bb-830b-f0511a4c1a0d"/*Crop*/,
+      "Position": {
+        "X": 420.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "c7137435-b717-4386-88b3-359a35a3368e"/*PickIntFromList*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "d1c97af8-5049-4a6b-bb14-f1b8125ea3fc"/*LoadImage*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "e077372f-815d-4f30-97f0-12e679ced5ac"/*Output*/,
+      "Position": {
+        "X": 560.0,
+        "Y": 0.0
+      }
+    }
+  ]
+}

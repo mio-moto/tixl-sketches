@@ -1,0 +1,52 @@
+{
+  "Id": "965450b7-dfbb-4308-a30d-9ca29711e5c5"/*BalatroTarot*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "fcfa006f-350b-4472-8405-1d4eb2272c58"/*Index*/,
+      "Position": {
+        "X": -280.0,
+        "Y": 70.0
+      }
+    }
+  ],
+  "SymbolChildUis": [
+    {
+      "ChildId": "5471e05d-4a80-47a9-815b-fd5269b0dc27"/*AtlasSelector*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 35.0
+      }
+    },
+    {
+      "ChildId": "8e177e97-1d61-4669-ab22-821b8e4b991b"/*LoadImage*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "ChildId": "a533cfc4-63d6-4949-b88c-7be06bddef03"/*ModInt*/,
+      "Position": {
+        "X": -140.0,
+        "Y": 70.0
+      }
+    },
+    {
+      "ChildId": "f7513145-cddb-46dd-82a4-8037c8fef268"/*Crop*/,
+      "Position": {
+        "X": 140.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "OutputUis": [
+    {
+      "OutputId": "4b8e547d-d020-4b8f-87e2-23d6326a4d20"/*Card*/,
+      "Position": {
+        "X": 280.0,
+        "Y": 0.0
+      }
+    }
+  ]
+}

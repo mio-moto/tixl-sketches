@@ -1,0 +1,128 @@
+{
+  "Id": "d2695f3b-d674-4485-9560-e8c0d1414a9d"/*BalatroSpectral*/,
+  "Inputs": [
+    {
+      "Id": "29ca8cfd-5771-4cf8-94a8-9cf8d4f3321a"/*Index*/,
+      "DefaultValue": 0
+    }
+  ],
+  "Children": [
+    {
+      "Id": "0bc7a380-8962-45d2-955a-ccf6eee223d4"/*AtlasSelector*/,
+      "SymbolId": "0440414e-1a30-4c84-8b8b-cebce01335f1",
+      "InputValues": [
+        {
+          "Id": "00fe3d18-5f3a-4b41-863c-cd8a4d7ebb69"/*AtlasSize*/,
+          "Type": "T3.Core.DataTypes.Vector.Int2",
+          "Value": {
+            "X": 10,
+            "Y": 6
+          }
+        },
+        {
+          "Id": "72b59651-c39a-41b9-bba4-16714fe72d2c"/*Index*/,
+          "Type": "System.Int32",
+          "Value": 38
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "2dfb8dc0-0d0c-45b1-88e1-2c8b35a1bb5a"/*ModInt*/,
+      "SymbolId": "cf3268d7-4f3d-47bd-8cb5-0214c75432ec",
+      "InputValues": [
+        {
+          "Id": "3528f4d3-3529-4551-9dc1-e1dafe6b0669"/*Value*/,
+          "Type": "System.Int32",
+          "Value": 17
+        },
+        {
+          "Id": "ccdea113-c046-4ec2-b1fb-30d6e15db7ce"/*Mod*/,
+          "Type": "System.Int32",
+          "Value": 17
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66"/*Crop*/,
+      "SymbolId": "a29cf1c8-d9cd-4a5d-b06c-597cbeb5b33d",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "883d224e-3dd5-4561-b615-47d9d144bc61"/*AddInts*/,
+      "SymbolId": "ab73a49e-c548-437d-a4ab-b3fa41e30097",
+      "InputValues": [
+        {
+          "Id": "d5efbe02-8f33-42e9-a205-859c218acbec"/*Input2*/,
+          "Type": "System.Int32",
+          "Value": 39
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "e77f06d4-5a20-4055-aeb8-a5c7c5afb726"/*LoadImage*/,
+      "SymbolId": "0b3436db-e283-436e-ba85-2f3a1de76a9d",
+      "InputValues": [
+        {
+          "Id": "76cc3811-4ae0-48b2-a119-890db5a4eeb2"/*Path*/,
+          "Type": "System.String",
+          "Value": "Mio.General.Canvas:Tarots.png"
+        }
+      ],
+      "Outputs": []
+    }
+  ],
+  "Connections": [
+    {
+      "SourceParentOrChildId": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66",
+      "SourceSlotId": "0f7a4421-97d7-48d0-8a99-a7cc84356be2",
+      "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "TargetSlotId": "dd8bad5a-ddb3-4bfa-b12c-c9cef423b7a2"
+    },
+    {
+      "SourceParentOrChildId": "883d224e-3dd5-4561-b615-47d9d144bc61",
+      "SourceSlotId": "9b3e42f6-8980-4f30-8d8f-ed1dea5f19b9",
+      "TargetParentOrChildId": "0bc7a380-8962-45d2-955a-ccf6eee223d4",
+      "TargetSlotId": "72b59651-c39a-41b9-bba4-16714fe72d2c"
+    },
+    {
+      "SourceParentOrChildId": "e77f06d4-5a20-4055-aeb8-a5c7c5afb726",
+      "SourceSlotId": "e0c4fedd-5c2f-46c8-b67d-5667435fb037",
+      "TargetParentOrChildId": "0bc7a380-8962-45d2-955a-ccf6eee223d4",
+      "TargetSlotId": "c4b01474-4662-479f-84f1-4a5fbd8b7206"
+    },
+    {
+      "SourceParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "SourceSlotId": "29ca8cfd-5771-4cf8-94a8-9cf8d4f3321a",
+      "TargetParentOrChildId": "2dfb8dc0-0d0c-45b1-88e1-2c8b35a1bb5a",
+      "TargetSlotId": "3528f4d3-3529-4551-9dc1-e1dafe6b0669"
+    },
+    {
+      "SourceParentOrChildId": "e77f06d4-5a20-4055-aeb8-a5c7c5afb726",
+      "SourceSlotId": "e0c4fedd-5c2f-46c8-b67d-5667435fb037",
+      "TargetParentOrChildId": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66",
+      "TargetSlotId": "a7fff052-42c2-40fb-938e-9fb9b6cfa591"
+    },
+    {
+      "SourceParentOrChildId": "0bc7a380-8962-45d2-955a-ccf6eee223d4",
+      "SourceSlotId": "ac0d49d4-02cf-4356-8fed-9c1c97c58a89",
+      "TargetParentOrChildId": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66",
+      "TargetSlotId": "db4c2d41-c369-4182-83fd-cb04aa04ec76"
+    },
+    {
+      "SourceParentOrChildId": "0bc7a380-8962-45d2-955a-ccf6eee223d4",
+      "SourceSlotId": "3285eb23-0369-4e53-9a88-d28291bce3cf",
+      "TargetParentOrChildId": "43a10c10-2169-4fd9-b1c1-2fc91ab15c66",
+      "TargetSlotId": "eff02108-2335-46b5-95ba-4235b9a26349"
+    },
+    {
+      "SourceParentOrChildId": "2dfb8dc0-0d0c-45b1-88e1-2c8b35a1bb5a",
+      "SourceSlotId": "8fed46e4-b9df-4d56-b098-9c9a17775139",
+      "TargetParentOrChildId": "883d224e-3dd5-4561-b615-47d9d144bc61",
+      "TargetSlotId": "8496877c-6186-4a9f-acb2-ceb90026dc1d"
+    }
+  ]
+}

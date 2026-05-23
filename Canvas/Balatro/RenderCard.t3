@@ -1,0 +1,115 @@
+{
+  "Id": "e2b9bfa9-34a7-4da4-ab8c-0b1b5e03effc"/*RenderCard*/,
+  "Inputs": [
+    {
+      "Id": "3b66d342-37a7-43d9-acc4-64b1dc2e75b8"/*Front*/,
+      "DefaultValue": null
+    },
+    {
+      "Id": "fcc9f8d2-eb85-43dc-9633-6be87686cb4e"/*Back*/,
+      "DefaultValue": null
+    }
+  ],
+  "Children": [
+    {
+      "Id": "31b246aa-dc09-4e1b-9d03-40b11d78d934"/*Transform*/,
+      "SymbolId": "284d2183-197d-47fd-b130-873cced78b1c",
+      "InputValues": [],
+      "Outputs": []
+    },
+    {
+      "Id": "5dabba63-71a3-42b6-a9a2-4b1825ed4507"/*Layer2d*/,
+      "SymbolId": "d8c5330f-59b5-4907-b845-a02def3042fa",
+      "InputValues": [
+        {
+          "Id": "022f1959-a62b-49de-817a-3930bc8ec32b"/*EnableDepthWrite*/,
+          "Type": "System.Boolean",
+          "Value": true
+        },
+        {
+          "Id": "4ac0a4d8-367c-4ece-9c1d-7abfbb2bfe27"/*PositionZ*/,
+          "Type": "System.Single",
+          "Value": 0.01
+        },
+        {
+          "Id": "b646098a-b62c-44dd-b6f7-f8d4821b0c12"/*Filtering*/,
+          "Type": "SharpDX.Direct3D11.Filter",
+          "Value": "MinMagPointMipLinear"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "6940933e-6943-4639-aaac-fef1d6b7565f"/*Layer2d*/,
+      "SymbolId": "d8c5330f-59b5-4907-b845-a02def3042fa",
+      "InputValues": [
+        {
+          "Id": "022f1959-a62b-49de-817a-3930bc8ec32b"/*EnableDepthWrite*/,
+          "Type": "System.Boolean",
+          "Value": false
+        },
+        {
+          "Id": "a83bdfb1-c92d-4844-9e43-8ce09959fae9"/*EnableDepthTest*/,
+          "Type": "System.Boolean",
+          "Value": true
+        },
+        {
+          "Id": "b646098a-b62c-44dd-b6f7-f8d4821b0c12"/*Filtering*/,
+          "Type": "SharpDX.Direct3D11.Filter",
+          "Value": "MinMagPointMipLinear"
+        }
+      ],
+      "Outputs": []
+    },
+    {
+      "Id": "8bd8dd25-f304-4666-957d-7b82378f9069"/*Execute*/,
+      "SymbolId": "936e4324-bea2-463a-b196-6064a2d8a6b2",
+      "InputValues": [],
+      "Outputs": []
+    }
+  ],
+  "Connections": [
+    {
+      "SourceParentOrChildId": "8bd8dd25-f304-4666-957d-7b82378f9069",
+      "SourceSlotId": "e81c99ce-fcee-4e7c-a1c7-0aa3b352b7e1",
+      "TargetParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "TargetSlotId": "104aa409-7535-4bc3-8753-77954b8ec6f4"
+    },
+    {
+      "SourceParentOrChildId": "8bd8dd25-f304-4666-957d-7b82378f9069",
+      "SourceSlotId": "e81c99ce-fcee-4e7c-a1c7-0aa3b352b7e1",
+      "TargetParentOrChildId": "104aa409-7535-4bc3-8753-77954b8ec6f4",
+      "TargetSlotId": "104aa409-7535-4bc3-8753-77954b8ec6f4"
+    },
+    {
+      "SourceParentOrChildId": "6940933e-6943-4639-aaac-fef1d6b7565f",
+      "SourceSlotId": "e4a8d926-7abd-4d2a-82a1-b7d140cb457f",
+      "TargetParentOrChildId": "31b246aa-dc09-4e1b-9d03-40b11d78d934",
+      "TargetSlotId": "dcd066ce-ac44-4e76-85b3-78821245d9dc"
+    },
+    {
+      "SourceParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "SourceSlotId": "3b66d342-37a7-43d9-acc4-64b1dc2e75b8",
+      "TargetParentOrChildId": "5dabba63-71a3-42b6-a9a2-4b1825ed4507",
+      "TargetSlotId": "2a95ac54-5ef7-4d3c-a90b-ecd5b422bddc"
+    },
+    {
+      "SourceParentOrChildId": "00000000-0000-0000-0000-000000000000",
+      "SourceSlotId": "fcc9f8d2-eb85-43dc-9633-6be87686cb4e",
+      "TargetParentOrChildId": "6940933e-6943-4639-aaac-fef1d6b7565f",
+      "TargetSlotId": "2a95ac54-5ef7-4d3c-a90b-ecd5b422bddc"
+    },
+    {
+      "SourceParentOrChildId": "5dabba63-71a3-42b6-a9a2-4b1825ed4507",
+      "SourceSlotId": "e4a8d926-7abd-4d2a-82a1-b7d140cb457f",
+      "TargetParentOrChildId": "8bd8dd25-f304-4666-957d-7b82378f9069",
+      "TargetSlotId": "5d73ebe6-9aa0-471a-ae6b-3f5bfd5a0f9c"
+    },
+    {
+      "SourceParentOrChildId": "31b246aa-dc09-4e1b-9d03-40b11d78d934",
+      "SourceSlotId": "2d329133-29b9-4f56-b5a6-5ff7d83638fa",
+      "TargetParentOrChildId": "8bd8dd25-f304-4666-957d-7b82378f9069",
+      "TargetSlotId": "5d73ebe6-9aa0-471a-ae6b-3f5bfd5a0f9c"
+    }
+  ]
+}
